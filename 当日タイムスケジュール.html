@@ -770,6 +770,14 @@
       border-color: var(--accent);
       background: #fff4f0;
     }
+    .paid-check { width: 72px; text-align: center; white-space: nowrap; }
+    .paid-check input {
+      width: 18px;
+      height: 18px;
+      accent-color: #1a9d57;
+      cursor: pointer;
+    }
+    tr.paid-done td { background: #f3fbf6; }
     .task-check { width: 36px; text-align: center; }
     .task-check input {
       width: 16px;
@@ -1196,7 +1204,7 @@
         <h2>準備タスク・スケジュール</h2>
         <p class="meta">出典：実行委員Excel「準備タスク・スケジュール」シート　／　本番は2026年12月11日</p>
         <div class="summary">
-          <div><span>準備タスク</span><strong id="task-n">16</strong>件</div>
+          <div><span>準備タスク</span><strong id="task-n">17</strong>件</div>
           <div><span>未完了</span><strong id="task-open">17</strong>件</div>
           <div><span>次の期限</span><strong id="task-next">9/25</strong></div>
           <div><span>ホテル未回答</span><strong id="hotel-open">9</strong>件</div>
@@ -1245,11 +1253,11 @@
     <section id="sponsors" class="panel">
       <header>
         <h2>抽選会　協賛者リスト（案）</h2>
-        <p class="meta">協賛総額231万円（西村先生の20万円を除く）　／　来場240名に1等〜9等　／　賞の名称は協賛者名（例：服部賞）</p>
+        <p class="meta">協賛総額231万円（西村先生の20万円を除く）　／　来場240名に1等〜9等　／　受け取った協賛金にチェック</p>
         <div class="summary">
           <div><span>協賛者</span><strong>18名</strong></div>
           <div><span>合計金額</span><strong>231万円</strong></div>
-          <div><span>賞の数</span><strong>18賞</strong></div>
+          <div><span>受領</span><strong id="sponsor-paid-count">0名</strong></div>
         </div>
       </header>
 
@@ -1257,7 +1265,7 @@
         <h2>抽選会の進め方（方針）</h2>
         <ul>
           <li>景品はプロジェクターで紹介する。来場240名全員に、1等から9等のいずれかを渡す。</li>
-          <li>景品の紹介は協賛者名の賞とする（例：服部賞）。原資は協賛総額231万円です。</li>
+          <li>原資は協賛総額231万円です。協賛者一覧のチェックは、協賛金を受け取った印です。</li>
           <li>1等・2等・3等・5等・6等・8等は豊美さんが購入します（132万円・114点）。4等・7等・9等は運営が購入します（99万円・126点）。</li>
           <li>4等はディズニーペア（26,000円×10名）、6等は1万円×16名（豊美さん）、7等はカタログギフト（10,000円×30名）、8等は5,000円×70名（豊美さん）、9等は5,000円×86名です。</li>
         </ul>
@@ -1272,39 +1280,39 @@
               <th>氏名</th>
               <th>所属</th>
               <th>金額</th>
-              <th>賞の名称</th>
+              <th class="paid-check">受領</th>
             </tr>
           </thead>
-          <tbody>
-            <tr><td class="num">1</td><td>矢島さん</td><td>ALTWELL</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">矢島賞</td></tr>
-            <tr><td class="num">2</td><td>和久井先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">和久井賞</td></tr>
-            <tr><td class="num">3</td><td>服部先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">服部賞</td></tr>
-            <tr><td class="num">4</td><td>小林先生</td><td>湖北台診療所</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">小林賞</td></tr>
-            <tr><td class="num">5</td><td>田中先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">田中賞</td></tr>
-            <tr><td class="num">6</td><td>金岡先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">金岡賞</td></tr>
-            <tr><td class="num">7</td><td>佐藤さん</td><td>ALTWELL</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">佐藤賞</td></tr>
-            <tr><td class="num">8</td><td>湯澤先生</td><td>湯沢クリニック</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">湯澤賞</td></tr>
-            <tr><td class="num">9</td><td>渡部さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">渡部賞</td></tr>
-            <tr><td class="num">10</td><td>北嶋さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">北嶋賞</td></tr>
-            <tr><td class="num">11</td><td>河北さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">河北賞</td></tr>
-            <tr><td class="num">12</td><td>松野さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">松野賞</td></tr>
-            <tr><td class="num">13</td><td>平野さん</td><td>ミツケル</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">平野賞</td></tr>
-            <tr><td class="num">14</td><td>渡邊先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t3">3万円</span></td><td class="prize">渡邊賞</td></tr>
-            <tr><td class="num">15</td><td>小澤一嘉さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">小澤一嘉賞</td></tr>
-            <tr><td class="num">16</td><td>小澤幸治さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">小澤幸治賞</td></tr>
-            <tr><td class="num">17</td><td>髙瀬さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">髙瀬賞</td></tr>
-            <tr><td class="num">18</td><td>岡田さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">岡田賞</td></tr>
+          <tbody id="sponsor-paid-body">
+            <tr><td class="num">1</td><td>矢島さん</td><td>ALTWELL</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="矢島さん" data-yen="200000" aria-label="矢島さんの協賛金を受領"></td></tr>
+            <tr><td class="num">2</td><td>和久井先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="和久井先生" data-yen="200000" aria-label="和久井先生の協賛金を受領"></td></tr>
+            <tr><td class="num">3</td><td>服部先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="服部先生" data-yen="200000" aria-label="服部先生の協賛金を受領"></td></tr>
+            <tr><td class="num">4</td><td>小林先生</td><td>湖北台診療所</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="小林先生" data-yen="200000" aria-label="小林先生の協賛金を受領"></td></tr>
+            <tr><td class="num">5</td><td>田中先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="田中先生" data-yen="200000" aria-label="田中先生の協賛金を受領"></td></tr>
+            <tr><td class="num">6</td><td>金岡先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="金岡先生" data-yen="200000" aria-label="金岡先生の協賛金を受領"></td></tr>
+            <tr><td class="num">7</td><td>佐藤さん</td><td>ALTWELL</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="佐藤さん" data-yen="200000" aria-label="佐藤さんの協賛金を受領"></td></tr>
+            <tr><td class="num">8</td><td>湯澤先生</td><td>湯沢クリニック</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="湯澤先生" data-yen="200000" aria-label="湯澤先生の協賛金を受領"></td></tr>
+            <tr><td class="num">9</td><td>渡部さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="渡部さん" data-yen="100000" aria-label="渡部さんの協賛金を受領"></td></tr>
+            <tr><td class="num">10</td><td>北嶋さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="北嶋さん" data-yen="100000" aria-label="北嶋さんの協賛金を受領"></td></tr>
+            <tr><td class="num">11</td><td>河北さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="河北さん" data-yen="100000" aria-label="河北さんの協賛金を受領"></td></tr>
+            <tr><td class="num">12</td><td>松野さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="松野さん" data-yen="100000" aria-label="松野さんの協賛金を受領"></td></tr>
+            <tr><td class="num">13</td><td>平野さん</td><td>ミツケル</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="平野さん" data-yen="200000" aria-label="平野さんの協賛金を受領"></td></tr>
+            <tr><td class="num">14</td><td>渡邊先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t3">3万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="渡邊先生" data-yen="30000" aria-label="渡邊先生の協賛金を受領"></td></tr>
+            <tr><td class="num">15</td><td>小澤一嘉さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="小澤一嘉さん" data-yen="20000" aria-label="小澤一嘉さんの協賛金を受領"></td></tr>
+            <tr><td class="num">16</td><td>小澤幸治さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="小澤幸治さん" data-yen="20000" aria-label="小澤幸治さんの協賛金を受領"></td></tr>
+            <tr><td class="num">17</td><td>髙瀬さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="髙瀬さん" data-yen="20000" aria-label="髙瀬さんの協賛金を受領"></td></tr>
+            <tr><td class="num">18</td><td>岡田さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="岡田さん" data-yen="20000" aria-label="岡田さんの協賛金を受領"></td></tr>
           </tbody>
           <tfoot>
             <tr>
               <td></td>
               <td colspan="2">合計　18名</td>
               <td class="yen">231万円</td>
-              <td>18賞</td>
+              <td class="paid-check" id="sponsor-paid-foot">0名</td>
             </tr>
           </tfoot>
         </table>
-        <p class="note">金額の大きい順を基本に並べています。</p>
+        <p class="note">金額の大きい順を基本に並べています。チェックは協賛金を受け取った印で、このブラウザに残ります。</p>
       </div>
 
       <div class="card">
@@ -1931,6 +1939,7 @@
         { id: "t5", task: "オープニングムービー作成", who: "鈴木・石川", due: "2026-11-15", note: "" },
         { id: "t7", task: "景品リスト", who: "出品者&豊美さん", due: "2026-11-15", note: "リストを貰う" },
         { id: "t10", task: "代表者（重役）へ当日スケジュールの共有", who: "佐藤", due: "2026-11-30", note: "時間がギリギリということを把握してもらう" },
+        { id: "t18", task: "豊美さん来訪（ラッピング・景品の最終確認）", who: "鈴木・石川・豊美さん", due: "2026-12-04", note: "11:00　葛西事務所" },
         { id: "t6", task: "会社・事業部代表者 紹介資料提出期限", who: "代表者＆佐藤", due: "2026-12-04", note: "" },
         { id: "t8", task: "景品紹介用スライド", who: "鈴木", due: "2026-12-04", note: "" },
         { id: "t11", task: "受付名簿", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "" },
@@ -2166,6 +2175,52 @@
         });
       }
       renderTasks();
+
+      var SPONSOR_PAID_KEY = "bonenkai-2026-sponsor-paid";
+      var sponsorPaid = {};
+      try {
+        sponsorPaid = JSON.parse(localStorage.getItem(SPONSOR_PAID_KEY) || "{}") || {};
+      } catch (err) { sponsorPaid = {}; }
+      function persistSponsorPaid() {
+        try { localStorage.setItem(SPONSOR_PAID_KEY, JSON.stringify(sponsorPaid)); } catch (err) {}
+      }
+      function renderSponsorPaid() {
+        var boxes = document.querySelectorAll("#sponsor-paid-body input[data-sponsor]");
+        var n = 0;
+        var yenSum = 0;
+        boxes.forEach(function (inp) {
+          var id = inp.getAttribute("data-sponsor");
+          var on = !!sponsorPaid[id];
+          inp.checked = on;
+          var tr = inp.closest("tr");
+          if (tr) tr.classList.toggle("paid-done", on);
+          if (on) {
+            n += 1;
+            yenSum += parseInt(inp.getAttribute("data-yen"), 10) || 0;
+          }
+        });
+        var man = (yenSum / 10000);
+        var yenLabel = (man % 1 === 0 ? String(man) : man.toFixed(1)) + "万円";
+        var label = n + "名　／　" + yenLabel;
+        var countEl = document.getElementById("sponsor-paid-count");
+        var footEl = document.getElementById("sponsor-paid-foot");
+        if (countEl) countEl.textContent = label;
+        if (footEl) footEl.textContent = n + "名";
+      }
+      var sponsorPaidBody = document.getElementById("sponsor-paid-body");
+      if (sponsorPaidBody) {
+        sponsorPaidBody.addEventListener("change", function (e) {
+          var inp = e.target;
+          if (!inp || inp.type !== "checkbox") return;
+          var id = inp.getAttribute("data-sponsor");
+          if (!id) return;
+          if (inp.checked) sponsorPaid[id] = 1;
+          else delete sponsorPaid[id];
+          persistSponsorPaid();
+          renderSponsorPaid();
+        });
+      }
+      renderSponsorPaid();
 
       var TOTAL = 2310000;
       var STAR_UNIT = 3000;
