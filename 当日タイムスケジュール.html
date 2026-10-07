@@ -1,0 +1,2616 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>忘年会｜2026年12月11日</title>
+  <style>
+    :root {
+      --ink: #2d3748;
+      --muted: #6b7280;
+      --line: #f0dcc8;
+      --paper: #fff6eb;
+      --card: #ffffff;
+      --accent: #e85d4c;
+      --gold: #f0b429;
+      --open: #ff7a8a;
+      --talk: #5ad68a;
+      --show: #5aa9ff;
+      --draw: #ffb020;
+      --close: #c084fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 920px;
+      margin: 0 auto 64px;
+      padding: 0 20px 32px;
+    }
+    .page.is-notice { max-width: 1180px; }
+    .app-head {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--paper);
+      padding: 8px 0 0;
+    }
+    .sim-pin {
+      position: sticky;
+      top: var(--head-h, 108px);
+      z-index: 8;
+      background: var(--card);
+      margin: -24px -28px 16px;
+      padding: 24px 28px 12px;
+    }
+    .app-title {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-bottom: none;
+      padding: 10px 20px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .app-title-main { min-width: 0; }
+    .app-title-counts {
+      display: flex;
+      gap: 14px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+    .app-title-count {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .app-title-count span {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .app-title-count select {
+      font: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--accent);
+      cursor: pointer;
+      min-width: 96px;
+    }
+    .kicker {
+      color: var(--accent);
+      letter-spacing: 0.16em;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 2px 0 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .meta { color: var(--muted); font-size: 12px; margin: 0; }
+    .app-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-top: none;
+      padding-right: 12px;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      background: transparent;
+      border: 0;
+      padding: 0 12px;
+      gap: 2px;
+    }
+    .tabs button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      font: inherit;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      padding: 8px 14px 6px;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+    }
+    .tabs button:hover { color: var(--ink); }
+    .tabs button.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .panel { display: none; padding-top: 10px; }
+    .panel.active { display: block; }
+    header, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      margin-bottom: 16px;
+    }
+    header { padding: 24px 28px 20px; }
+    .card { padding: 24px 28px; }
+    header h2, .card > h2, h2 {
+      margin: 0 0 14px;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    header h2 { margin-bottom: 8px; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 16px 0 0;
+    }
+    .summary div {
+      background: var(--paper);
+      padding: 12px 14px;
+    }
+    .summary span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+    .summary strong { font-size: 16px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    .time {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      width: 118px;
+    }
+    .dur {
+      white-space: nowrap;
+      color: var(--muted);
+      width: 56px;
+    }
+    .who { width: 28%; }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .tag-prep { background: #e8f0ff; color: #3b6fd8; }
+    .tag-open { background: #ffe4ea; color: #d9485f; }
+    .tag-talk { background: #e3f9ec; color: #1a9d57; }
+    .tag-show { background: #e6f1ff; color: #2b7de9; }
+    .tag-draw { background: #fff3d6; color: #c47a00; }
+    .tag-close { background: #f3e8ff; color: #8b5cf6; }
+    .tag-photo { background: #fde68a; color: #92400e; }
+    .t20 { background: #fff3d6; color: #c47a00; }
+    .t10 { background: #e6f1ff; color: #2b7de9; }
+    .t3 { background: #e3f9ec; color: #1a9d57; }
+    .t2 { background: #f3e8ff; color: #8b5cf6; }
+    .t1 { background: #f3e8ff; color: #8b5cf6; }
+    .buyer {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+    }
+    .deck-stage {
+      background: #f7f4ef;
+      border: 1px solid #e4d8c8;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+    }
+    .mini-slide {
+      display: none;
+      position: absolute;
+      inset: 0;
+      padding: 22px 36px 16px 44px;
+      color: #1c1814;
+      background: #f7f4ef;
+    }
+    .mini-slide.is-on { display: flex; flex-direction: column; }
+    .mini-slide .slide-top {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 8px;
+      height: auto;
+      margin: 0;
+      background: #241f1a;
+    }
+    .slide-kicker {
+      margin: 18px 0 0;
+      text-align: center;
+      color: #c45c26;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      font-size: 13px;
+    }
+    .slide-title {
+      margin: 10px 0 0;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .slide-sub { margin: 8px 0 0; text-align: center; font-size: 14px; letter-spacing: 0.16em; color: #8a6c56; }
+    .slide-rule {
+      width: 48px;
+      height: 2px;
+      margin: 16px auto 4px;
+      background: #c45c26;
+    }
+    .slide-foot {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      color: #8a6c56;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      padding-top: 8px;
+      border-top: 1px solid #e4d8c8;
+      flex-shrink: 0;
+    }
+    .slide-h {
+      margin: 4px 0 8px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+    }
+    .slide-h em {
+      color: #c45c26;
+      font-style: normal;
+      font-weight: 700;
+      margin-right: 12px;
+      letter-spacing: 0.08em;
+    }
+    .slide-name-lg {
+      text-align: left;
+      font-size: 30px;
+      margin: 0 0 4px;
+      letter-spacing: 0.02em;
+    }
+    .slide-kind {
+      margin: 0 0 12px;
+      text-align: left;
+      color: #8a6c56;
+      font-size: 14px;
+    }
+    .slide-facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: transparent;
+      border-top: 1px solid #e4d8c8;
+      border-bottom: 1px solid #e4d8c8;
+    }
+    .slide-facts div { padding: 10px 8px 12px; text-align: left; }
+    .slide-facts div + div { border-left: none; }
+    .slide-facts span { display: block; color: #8a6c56; font-size: 11px; letter-spacing: 0.16em; margin-bottom: 4px; }
+    .slide-facts strong { font-size: 16px; }
+    .slide-label { margin: 12px 0 0; color: #c45c26; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; }
+    .slide-ideas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      flex: 1;
+      min-height: 0;
+      align-items: center;
+    }
+    .slide-ideas div {
+      background: transparent;
+      border-top: none;
+      border-left: 1px solid #e4d8c8;
+      padding: 8px 18px;
+      text-align: left;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .slide-ideas div:first-child { border-left: none; padding-left: 0; }
+    .slide-ideas em {
+      display: block;
+      color: #c45c26;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .slide-photos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      flex: 1;
+      min-height: 0;
+    }
+    .slide-photos div {
+      position: relative;
+      background: #efe4d6;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-end;
+      padding: 0;
+      color: #a08b78;
+      min-height: 0;
+      font-size: 14px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .photo-only { flex: 1; min-height: 0; }
+    .ph-no {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      color: #c45c26;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .ph-hint {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-photos strong {
+      color: #f7f4ef;
+      background: #241f1a;
+      margin: 0;
+      padding: 12px 10px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+    .close-slide .slide-kicker { margin-top: auto; }
+    .close-slide .slide-title { font-size: 30px; }
+    .close-slide .slide-name { margin: 6px 0 0; text-align: center; font-size: 22px; font-weight: 700; }
+    .slide-thanks {
+      margin: auto -36px -16px -44px;
+      padding: 14px 28px;
+      background: #241f1a;
+      color: #f7f4ef;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      letter-spacing: 0.2em;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .slide-thanks span:first-child,
+    .slide-thanks span:last-child {
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: #c4a48a;
+      font-size: 11px;
+    }
+    .deck-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .deck-nav button {
+      appearance: none;
+      font: inherit;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 6px 14px;
+      cursor: pointer;
+    }
+    @media (max-width: 700px) {
+      .slide-title { font-size: 22px; }
+      .slide-facts, .slide-ideas, .slide-photos { grid-template-columns: 1fr; }
+      .mini-slide { padding: 20px 16px 32px; overflow: auto; }
+    }
+    ul { margin: 0; padding-left: 1.2em; }
+    li { margin: 6px 0; }
+    .bar {
+      display: flex;
+      height: 22px;
+      overflow: hidden;
+      margin: 8px 0 14px;
+      border-radius: 4px;
+    }
+    .bar span { display: block; height: 100%; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .legend i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+      vertical-align: -1px;
+    }
+    .num { width: 40px; color: var(--muted); }
+    .yen {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      text-align: right;
+    }
+    .prize { white-space: nowrap; font-weight: 700; color: #c47a00; }
+    .pending { color: #d9485f; }
+    .unset { color: #d9485f; font-weight: 700; }
+    .org-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .org {
+      background: var(--paper);
+      padding: 14px 16px;
+    }
+    .org h3 { margin: 0 0 6px; font-size: 14px; }
+    .org p { margin: 0; font-size: 13px; color: var(--muted); }
+    .org strong { color: var(--ink); }
+    tfoot td {
+      font-weight: 700;
+      border-bottom: none;
+      padding-top: 14px;
+    }
+    .sim-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .sim-label strong {
+      font-size: 28px;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+    }
+    .sim-scale {
+      display: grid;
+      grid-template-columns: 48px 1fr 56px;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .js-prize-slider {
+      width: 100%;
+      accent-color: #e85d4c;
+      height: 8px;
+      cursor: pointer;
+    }
+    .sim-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .sim-card {
+      background: var(--paper);
+      padding: 14px 16px;
+    }
+    .sim-card span {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+    .sim-card strong {
+      display: block;
+      font-size: 20px;
+      margin: 4px 0 2px;
+    }
+    .sim-card em {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .sim-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .sim-card.is-prize strong { color: #c47a00; }
+    .sim-card.is-gift strong { color: #2b7de9; }
+    .sim-card.is-scratch strong { color: #1a9d57; }
+    .people-select {
+      font: inherit;
+      font-weight: 700;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .alloc-tools {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 12px;
+      font-size: 13px;
+    }
+    .alloc-tools label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+    }
+    .pattern-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .pattern-btn,
+    .pattern-save {
+      appearance: none;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .pattern-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: #fff4f0;
+    }
+    .pattern-btn.is-empty {
+      opacity: 0.45;
+    }
+    .pattern-save {
+      color: var(--ink);
+    }
+    .pattern-msg {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .notice-split {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .notice-flyer {
+      position: sticky;
+      top: calc(var(--head-h, 120px) + 8px);
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 10px;
+    }
+    .notice-flyer img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .notice-flyer p { margin: 8px 0 0; text-align: right; }
+    .notice-lead {
+      margin: 8px 0 0;
+      font-size: 15px;
+    }
+    .notice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .notice-kicker {
+      margin: 0 0 6px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .notice-date {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+    .notice-date small {
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+    .notice-sub { margin: 6px 0 0; font-size: 14px; }
+    .notice-call {
+      background: #fff4f0;
+      border: 1px solid #f0c2b8;
+      padding: 16px 18px;
+    }
+    .notice-call strong {
+      display: block;
+      color: var(--accent);
+      font-size: 18px;
+      margin-top: 4px;
+    }
+    .notice-mystery {
+      margin: 4px 0 0;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+    }
+    .notice-deadline { color: var(--accent); }
+    @media (max-width: 900px) {
+      .notice-split { grid-template-columns: 1fr; }
+      .notice-flyer { position: static; }
+      .notice-grid { grid-template-columns: 1fr; }
+    }
+    .roster-q {
+      width: 100%;
+      font: inherit;
+      font-size: 15px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+    .roster-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .roster-filters button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    .roster-filters button.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: #fff4f0;
+    }
+    .roster-org {
+      margin-bottom: 12px;
+    }
+    .roster-org h3 {
+      margin: 0 0 4px;
+      font-size: 15px;
+    }
+    .roster-org .meta {
+      margin-bottom: 10px;
+    }
+    .name-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 16px;
+      margin: 0;
+      padding: 0;
+    }
+    .name-grid li {
+      list-style: none;
+      margin: 0;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      display: flex;
+      gap: 8px;
+    }
+    .name-grid .num {
+      width: 28px;
+      flex-shrink: 0;
+    }
+    .name-empty {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+    }
+    .roster-hit {
+      background: #fff3d6;
+    }
+    .task-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 12px;
+    }
+    .task-filters button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    .task-filters button.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: #fff4f0;
+    }
+    .task-check { width: 36px; text-align: center; }
+    .task-check input {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .task-due {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      width: 92px;
+    }
+    .task-who { width: 22%; }
+    .task-group td {
+      background: var(--paper);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      padding-top: 14px;
+    }
+    tr.task-done td { color: var(--muted); }
+    tr.task-done td:not(.task-check) { text-decoration: line-through; }
+    tr.task-overdue td.task-due { color: #d9485f; }
+    tr.task-soon td.task-due { color: #c47a00; }
+    .tag-overdue { background: #ffe4ea; color: #d9485f; }
+    .tag-soon { background: #fff3d6; color: #c47a00; }
+    .tag-ok { background: #e3f9ec; color: #1a9d57; }
+    .tag-done { background: #f3f4f6; color: #6b7280; }
+    .hotel-answer {
+      width: 100%;
+      font: inherit;
+      font-size: 14px;
+      padding: 6px 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+    .hotel-answer::placeholder { color: #d9485f; }
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .card-head h2 { margin: 0; }
+    .print-btn {
+      appearance: none;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border: 0;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 12;
+    }
+    .print-btn:hover { filter: brightness(0.95); }
+    .print-btn[hidden] { display: none !important; }
+    @media (max-width: 700px) {
+      .summary, .org-grid, .sim-cards, .name-grid { grid-template-columns: 1fr 1fr; }
+      .tabs button { padding: 12px 12px 10px; font-size: 13px; }
+    }
+    .print-brand { display: none; }
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 10mm 12mm;
+      }
+      html, body { background: #fff; color: #222; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { margin: 0; max-width: none; padding: 0; }
+      .notice-split { grid-template-columns: 42% minmax(0, 1fr); gap: 8px; }
+      .notice-flyer { position: static; break-inside: avoid; }
+      .panel { display: none !important; }
+      .panel.active { display: block !important; }
+      .print-brand {
+        display: block;
+        margin: 0 0 12px;
+        padding: 0 0 8px;
+        border-bottom: 2px solid var(--accent);
+      }
+      .print-brand-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+      .print-brand-meta {
+        margin: 4px 0 0;
+        font-size: 11px;
+        color: #555;
+      }
+      #program header,
+      #program .card:not(.timetable-card),
+      #sponsors header,
+      #sponsors .card:not(.sponsors-card),
+      #tasks header,
+      #tasks .card:not(.tasks-card):not(.hotel-card) { display: none !important; }
+      .timetable-card,
+      .sponsors-card,
+      .tasks-card,
+      .hotel-card {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      .timetable-card .card-head,
+      .sponsors-card .card-head,
+      .tasks-card .card-head,
+      .hotel-card .card-head { margin-bottom: 6px; }
+      .timetable-card h2,
+      .sponsors-card h2,
+      .tasks-card h2,
+      .hotel-card h2 { font-size: 16px; border-left-width: 3px; margin: 0; }
+      .tasks-card table,
+      .hotel-card table { font-size: 11px; }
+      .tasks-card th, .tasks-card td,
+      .hotel-card th, .hotel-card td { padding: 5px 6px; }
+      .hotel-card { margin-top: 14px !important; }
+      .hotel-answer {
+        border: 0;
+        padding: 0;
+        background: transparent;
+      }
+      .timetable-card table,
+      .sponsors-card table { font-size: 11px; }
+      .timetable-card th, .timetable-card td,
+      .sponsors-card th, .sponsors-card td { padding: 5px 6px; }
+      .timetable-card .time { width: 108px; white-space: nowrap; }
+      .timetable-card .dur { width: 40px; white-space: nowrap; }
+      .timetable-card .who { width: 22%; }
+      .timetable-card .note,
+      .sponsors-card .note { font-size: 10px; margin-top: 1px; }
+      .tag { padding: 1px 6px; font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="print-brand">
+      <p class="print-brand-title">グループ忘年会</p>
+      <p class="print-brand-meta">2026年12月11日（金）　会場入り13:30　／　開式14:30　／　閉会17:00　／　写真撮影17:15</p>
+    </div>
+    <div class="app-head">
+      <div class="app-title">
+        <div class="app-title-main">
+          <div class="kicker">BONENKAI 2026</div>
+          <h1>忘年会</h1>
+          <p class="meta">2026年12月11日（金）　／　会場入り13:30　／　開式14:30　／　閉会17:00　／　写真撮影17:15</p>
+        </div>
+        <div class="app-title-counts">
+          <div class="app-title-count">
+            <span>来場の人数</span>
+            <select id="guest-n-select" aria-label="来場の人数"></select>
+          </div>
+        </div>
+      </div>
+      <div class="app-toolbar">
+        <nav class="tabs" aria-label="ページ切替">
+          <button type="button" class="active" data-tab="program">プログラム</button>
+          <button type="button" data-tab="notice">お知らせ</button>
+          <button type="button" data-tab="tasks">準備タスク</button>
+          <button type="button" data-tab="sponsors">協賛者リスト</button>
+          <button type="button" data-tab="roster">名簿</button>
+          <button type="button" data-tab="prizes">景品</button>
+          <button type="button" data-tab="slides">紹介スライド</button>
+          <button type="button" data-tab="budget">予算</button>
+        </nav>
+        <button type="button" class="print-btn" id="print-sheet">A4で印刷</button>
+      </div>
+    </div>
+
+    <section id="program" class="panel active">
+      <header>
+        <h2>当日タイムスケジュール（案）</h2>
+        <p class="meta">本編14:30〜17:00　／　司会：鈴木・石川</p>
+        <div class="summary">
+          <div><span>会場準備</span><strong>13:30〜</strong></div>
+          <div><span>受付</span><strong>14:00〜14:30</strong></div>
+          <div><span>本編</span><strong>14:30〜17:00</strong></div>
+          <div><span>所要</span><strong>2時間30分</strong></div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>全体の時間配分（本編 150分）</h2>
+        <div class="legend">
+          <span><i style="background:#ff7a8a"></i>開式・挨拶 25分</span>
+          <span><i style="background:#5ad68a"></i>歓談 25分</span>
+          <span><i style="background:#5aa9ff"></i>紹介 40分</span>
+          <span><i style="background:#ffb020"></i>抽選会 55分</span>
+          <span><i style="background:#c084fc"></i>閉会 5分</span>
+        </div>
+        <div class="bar" title="本編150分の内訳">
+          <span style="width:16.67%; background:#ff7a8a"></span>
+          <span style="width:10%; background:#5ad68a"></span>
+          <span style="width:26.67%; background:#5aa9ff"></span>
+          <span style="width:3.33%; background:#5ad68a"></span>
+          <span style="width:36.67%; background:#ffb020"></span>
+          <span style="width:3.33%; background:#5ad68a"></span>
+          <span style="width:3.33%; background:#c084fc"></span>
+        </div>
+        <p class="note">紹介はALTRYグループ20分、ライフケア20分です。17:00閉会を守るため、紹介後の歓談は5分、抽選会は55分です。</p>
+      </div>
+
+      <div class="card timetable-card">
+        <h2>タイムテーブル</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>時刻</th>
+              <th>区分</th>
+              <th>内容</th>
+              <th>担当</th>
+              <th>時間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time">13:30〜14:00</td>
+              <td><span class="tag tag-prep">準備</span></td>
+              <td>会場準備（受付・音響・映像・席・景品配置など）</td>
+              <td class="who">運営スタッフ</td>
+              <td class="dur">30分</td>
+            </tr>
+            <tr>
+              <td class="time">14:00〜14:30</td>
+              <td><span class="tag tag-prep">受付</span></td>
+              <td>受付開始<br><span class="note">開式5分前を目安に着席案内</span></td>
+              <td class="who">受付担当</td>
+              <td class="dur">30分</td>
+            </tr>
+            <tr>
+              <td class="time">14:30〜14:32</td>
+              <td><span class="tag tag-open">開式</span></td>
+              <td>オープニングムービー</td>
+              <td class="who">映像操作</td>
+              <td class="dur">2分</td>
+            </tr>
+            <tr>
+              <td class="time">14:32〜14:35</td>
+              <td><span class="tag tag-open">開式</span></td>
+              <td>司会登壇・開式の言葉・本日の流れ案内</td>
+              <td class="who">鈴木　／　石川</td>
+              <td class="dur">3分</td>
+            </tr>
+            <tr>
+              <td class="time">14:35〜14:55</td>
+              <td><span class="tag tag-open">挨拶</span></td>
+              <td>開会にあたってのご挨拶　→　乾杯<br><span class="note">登壇順は調整中　／　乾杯後、食事・お酒の提供開始</span></td>
+              <td class="who">矢島さん　／　和久井先生　／　服部先生</td>
+              <td class="dur">20分</td>
+            </tr>
+            <tr>
+              <td class="time">14:55〜15:10</td>
+              <td><span class="tag tag-talk">歓談</span></td>
+              <td>歓談①（食事開始）</td>
+              <td class="who">―</td>
+              <td class="dur">15分</td>
+            </tr>
+            <tr>
+              <td class="time">15:10〜15:30</td>
+              <td><span class="tag tag-show">紹介</span></td>
+              <td>法人・事業所紹介</td>
+              <td class="who">ALTRYグループ</td>
+              <td class="dur">20分</td>
+            </tr>
+            <tr>
+              <td class="time">15:30〜15:50</td>
+              <td><span class="tag tag-show">紹介</span></td>
+              <td>ライフケア部門　6事業所紹介<br><span class="note">合計20分（1事業所あたり約3分、挨拶＋映像）</span></td>
+              <td class="who">ライフケア部門</td>
+              <td class="dur">20分</td>
+            </tr>
+            <tr>
+              <td class="time">15:50〜15:55</td>
+              <td><span class="tag tag-talk">歓談</span></td>
+              <td>歓談②</td>
+              <td class="who">―</td>
+              <td class="dur">5分</td>
+            </tr>
+            <tr>
+              <td class="time">15:55〜16:50</td>
+              <td><span class="tag tag-draw">抽選</span></td>
+              <td>抽選会<br><span class="note">来場240名に1等〜7等　／　<strong>1・2・3・5等は豊美さんが購入</strong>（81万円・28点）</span></td>
+              <td class="who">司会（鈴木　／　石川）</td>
+              <td class="dur">55分</td>
+            </tr>
+            <tr>
+              <td class="time">16:50〜16:55</td>
+              <td><span class="tag tag-talk">歓談</span></td>
+              <td>歓談③（景品確認・着席）</td>
+              <td class="who">―</td>
+              <td class="dur">5分</td>
+            </tr>
+            <tr>
+              <td class="time">16:55〜17:00</td>
+              <td><span class="tag tag-close">閉会</span></td>
+              <td>閉会の挨拶</td>
+              <td class="who">松野さん</td>
+              <td class="dur">5分</td>
+            </tr>
+            <tr>
+              <td class="time">17:00〜17:15</td>
+              <td><span class="tag tag-photo">撮影</span></td>
+              <td>写真撮影</td>
+              <td class="who">―</td>
+              <td class="dur">15分</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>進行上のポイント</h2>
+        <ul>
+          <li>本編は14:30〜17:00の150分です。閉会後、17:00〜17:15に写真撮影があります。ライフケア部門は合計20分です。</li>
+          <li>17:00閉会を維持するため、紹介後の歓談②は5分、抽選会は55分です。</li>
+          <li>紹介が押した場合は、抽選会の後半で吸収します。歓談③は閉会挨拶前の着席誘導にあてます。</li>
+          <li>司会の鈴木・石川は、各パートの導入・時間管理・登壇者の呼び込みを担当します。</li>
+          <li>抽選会は来場240名全員に景品を渡します。1等15万円1名、2等8万円2名、3等4万円5名、4等ディズニーペア2.6万円10名、5等1.5万円20名、6等カタログギフト1万円46名、7等5,000円156名です。1等・2等・3等・5等は豊美さんが購入します。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="notice" class="panel">
+      <div class="notice-split">
+      <aside class="notice-flyer">
+        <img src="notice-flyer.png" alt="グループ合同忘年会2026 最終案内" />
+        <p class="meta"><a href="最終案内.pdf">最終案内PDF</a></p>
+      </aside>
+      <div class="notice-body">
+      <header>
+        <h2>最終案内</h2>
+        <p class="meta">グループ合同忘年会 2026　／　最終案内（A4）</p>
+        <p class="notice-lead">開催まであと少し！最終の出欠確認（2次）にご協力をお願いします。</p>
+        <div class="summary">
+          <div><span>日時</span><strong>12.11（金）</strong></div>
+          <div><span>会場</span><strong>ヒルトン東京ベイ</strong></div>
+          <div><span>最終回答</span><strong>10.31（土）</strong></div>
+          <div><span>景品総額</span><strong>当日発表</strong></div>
+        </div>
+      </header>
+
+      <div class="card">
+        <div class="notice-grid">
+          <div class="org">
+            <p class="notice-kicker">日時</p>
+            <p class="notice-date">12.11<small>（金）</small></p>
+            <p class="notice-sub">14:30 〜 17:00</p>
+            <p class="notice-sub">受付開始 14:00〜</p>
+          </div>
+          <div class="org">
+            <p class="notice-kicker">会場</p>
+            <p class="notice-date" style="font-size:22px">ヒルトン東京ベイ</p>
+            <p class="notice-sub">〒279-0031<br>千葉県浦安市舞浜1-8</p>
+            <p class="notice-sub">会場：アンビオ（B1階）</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="notice-grid">
+          <div class="notice-call">
+            <p class="notice-kicker">参加者全員に</p>
+            <strong>もれなくプレゼント！</strong>
+          </div>
+          <div class="notice-call">
+            <p class="notice-kicker">景品総額</p>
+            <p class="notice-mystery">¥ ？,？？？0,000円</p>
+            <p class="notice-sub">ナゾの金額は当日発表！</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="notice-grid">
+          <div>
+            <h2>出欠について（2次）</h2>
+            <p class="notice-kicker">最終回答 締切</p>
+            <p class="notice-date notice-deadline">10.31<small>（土）</small></p>
+            <p class="notice-sub">1次回答（6月30日）は人数把握のためのものでした。各事業部で取りまとめのうえ、最終のご回答をお願いします。</p>
+            <p class="note">締切後も、新入社員の参加など変更は随時受け付けます。</p>
+          </div>
+          <div>
+            <h2>受付・服装について</h2>
+            <p class="notice-sub"><strong>受付：</strong>［例：事業部ごとの受付へお越しください］</p>
+            <p class="notice-sub"><strong>服装：</strong>スマートカジュアル</p>
+            <p class="note">制服・サンダル・ジャージなどはお控えください</p>
+            <p class="notice-sub"><strong>クローク：</strong>会場内にあり</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>アクセス</h2>
+        <p class="note">原則、公共交通機関をご利用ください</p>
+        <div class="notice-grid">
+          <div class="org">
+            <p class="notice-kicker">JR舞浜駅 → ホテル</p>
+            <p class="notice-sub">ホテル直行シャトルバス（無料）約7分</p>
+          </div>
+          <div class="org">
+            <p class="notice-kicker">ディズニーリゾートライン</p>
+            <p class="notice-sub">ゲートウェイ・ステーション → ベイサイド・ステーション（約4分）<br>→ 徒歩または無料送迎バス 約1分</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="meta">グループ合同忘年会実行委員会</p>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="tasks" class="panel">
+      <header>
+        <h2>準備タスク・スケジュール</h2>
+        <p class="meta">出典：実行委員Excel「準備タスク・スケジュール」シート　／　本番は2026年12月11日</p>
+        <div class="summary">
+          <div><span>準備タスク</span><strong id="task-n">16</strong>件</div>
+          <div><span>未完了</span><strong id="task-open">17</strong>件</div>
+          <div><span>次の期限</span><strong id="task-next">9/25</strong></div>
+          <div><span>ホテル未回答</span><strong id="hotel-open">9</strong>件</div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>探す</h2>
+        <div class="task-filters" id="task-who-filters"></div>
+        <div class="task-filters" id="task-state-filters"></div>
+        <p class="note" id="task-result"></p>
+      </div>
+
+      <div class="card tasks-card">
+        <h2>準備タスク</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="task-check"></th>
+              <th>期限</th>
+              <th>タスク</th>
+              <th>担当</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody id="task-body"></tbody>
+        </table>
+        <p class="note">チェックはこの端末に保存されます。期限はExcelの日付です。</p>
+      </div>
+
+      <div class="card hotel-card">
+        <h2>ホテル確認事項</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+          </thead>
+          <tbody id="hotel-body"></tbody>
+        </table>
+        <p class="note">Excel上はすべて未回答です。入力した回答はこの端末に保存されます。</p>
+      </div>
+    </section>
+
+    <section id="sponsors" class="panel">
+      <header>
+        <h2>抽選会　協賛者リスト（案）</h2>
+        <p class="meta">協賛総額231万円（西村先生の20万円を除く）　／　来場240名に1等〜7等　／　賞の名称は協賛者名（例：服部賞）</p>
+        <div class="summary">
+          <div><span>協賛者</span><strong>18名</strong></div>
+          <div><span>合計金額</span><strong>231万円</strong></div>
+          <div><span>賞の数</span><strong>18賞</strong></div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>抽選会の進め方（方針）</h2>
+        <ul>
+          <li>景品はプロジェクターで紹介する。来場240名全員に、1等から7等のいずれかを渡す。</li>
+          <li>景品の紹介は協賛者名の賞とする（例：服部賞）。原資は協賛総額231万円です。</li>
+          <li>1等・2等・3等・5等は豊美さんが購入します（81万円・28点）。4等・6等・7等は運営が購入します（150万円・212点）。</li>
+          <li>4等はディズニーペア（26,000円×10名）、6等はカタログギフト（10,000円×46名）、7等は5,000円×156名です。</li>
+        </ul>
+      </div>
+
+      <div class="card sponsors-card">
+        <h2>協賛者一覧</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="num">No.</th>
+              <th>氏名</th>
+              <th>所属</th>
+              <th>金額</th>
+              <th>賞の名称</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td>矢島さん</td><td>ALTWELL</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">矢島賞</td></tr>
+            <tr><td class="num">2</td><td>和久井先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">和久井賞</td></tr>
+            <tr><td class="num">3</td><td>服部先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">服部賞</td></tr>
+            <tr><td class="num">4</td><td>小林先生</td><td>湖北台診療所</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">小林賞</td></tr>
+            <tr><td class="num">5</td><td>田中先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">田中賞</td></tr>
+            <tr><td class="num">6</td><td>金岡先生</td><td>みんなの血管外科池袋</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">金岡賞</td></tr>
+            <tr><td class="num">7</td><td>佐藤さん</td><td>ALTWELL</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">佐藤賞</td></tr>
+            <tr><td class="num">8</td><td>湯澤先生</td><td>湯沢クリニック</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">湯澤賞</td></tr>
+            <tr><td class="num">9</td><td>渡部さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">渡部賞</td></tr>
+            <tr><td class="num">10</td><td>北嶋さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">北嶋賞</td></tr>
+            <tr><td class="num">11</td><td>河北さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">河北賞</td></tr>
+            <tr><td class="num">12</td><td>松野さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="prize">松野賞</td></tr>
+            <tr><td class="num">13</td><td>平野さん</td><td>ミツケル</td><td class="yen"><span class="tag t20">20万円</span></td><td class="prize">平野賞</td></tr>
+            <tr><td class="num">14</td><td>渡邊先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t3">3万円</span></td><td class="prize">渡邊賞</td></tr>
+            <tr><td class="num">15</td><td>小澤一嘉さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">小澤一嘉賞</td></tr>
+            <tr><td class="num">16</td><td>小澤幸治さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">小澤幸治賞</td></tr>
+            <tr><td class="num">17</td><td>髙瀬さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">髙瀬賞</td></tr>
+            <tr><td class="num">18</td><td>岡田さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="prize">岡田賞</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td colspan="2">合計　18名</td>
+              <td class="yen">231万円</td>
+              <td>18賞</td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="note">金額の大きい順を基本に並べています。</p>
+      </div>
+
+      <div class="card">
+        <h2>金額区分</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>区分</th>
+              <th>人数</th>
+              <th>小計</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag t20">20万円</span>　矢島さん、和久井先生、服部先生、小林先生、田中先生、金岡先生、佐藤さん、湯澤先生、平野さん</td>
+              <td>9名</td>
+              <td class="yen">180万円</td>
+            </tr>
+            <tr>
+              <td><span class="tag t10">10万円</span>　渡部さん、北嶋さん、河北さん、松野さん</td>
+              <td>4名</td>
+              <td class="yen">40万円</td>
+            </tr>
+            <tr>
+              <td><span class="tag t3">3万円</span>　渡邊先生</td>
+              <td>1名</td>
+              <td class="yen">3万円</td>
+            </tr>
+            <tr>
+              <td><span class="tag t2">2万円</span>　小澤一嘉さん、小澤幸治さん、髙瀬さん、岡田さん</td>
+              <td>4名</td>
+              <td class="yen">8万円</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>所属別　集計</h2>
+        <div class="org-grid">
+          <div class="org">
+            <h3>ALTWELL</h3>
+            <p>6名　／　<strong>80万円</strong><br>矢島さん20　佐藤さん20　渡部さん10　北嶋さん10　河北さん10　松野さん10</p>
+          </div>
+          <div class="org">
+            <h3>みんなの血管外科池袋</h3>
+            <p>3名　／　<strong>60万円</strong><br>服部先生20　田中先生20　金岡先生20</p>
+          </div>
+          <div class="org">
+            <h3>のがたクリニック</h3>
+            <p>2名　／　<strong>23万円</strong><br>和久井先生20　渡邊先生3</p>
+          </div>
+          <div class="org">
+            <h3>湖北台診療所</h3>
+            <p>1名　／　<strong>20万円</strong><br>小林先生20</p>
+          </div>
+          <div class="org">
+            <h3>湯沢クリニック</h3>
+            <p>1名　／　<strong>20万円</strong><br>湯澤先生20</p>
+          </div>
+          <div class="org">
+            <h3>ミツケル</h3>
+            <p>5名　／　<strong>28万円</strong><br>平野さん20　小澤一嘉さん2　小澤幸治さん2　髙瀬さん2　岡田さん2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>確認が必要な点</h2>
+        <ul>
+          <li>景品は協賛総額231万円で、来場240名に1等〜7等を配ります。1等・2等・3等・5等は豊美さんが購入します。内訳は景品タブを参照。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="roster" class="panel">
+      <header>
+        <h2>参加者名簿</h2>
+        <p class="meta">出典：実行委員Excel「名簿」シート　／　Excel上の合計は199名</p>
+        <div class="summary">
+          <div><span>名簿人数</span><strong>199名</strong></div>
+          <div><span>氏名記載</span><strong>189名</strong></div>
+          <div><span>所属</span><strong>21</strong></div>
+          <div><span>確認が必要</span><strong>4件</strong></div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>探す</h2>
+        <input id="roster-q" class="roster-q" type="search" placeholder="氏名・所属で検索" autocomplete="off" />
+        <div class="roster-filters" id="roster-filters"></div>
+        <p class="note" id="roster-result"></p>
+      </div>
+
+      <div id="roster-orgs"></div>
+
+      <div class="card">
+        <h2>確認が必要な点</h2>
+        <ul>
+          <li>高根公団の「牧田さん？？」は未確認です。Excelの人数（3名）には含めていません。</li>
+          <li>本八幡の「東さん？」は未確認です。Excelの人数（3名）には含めていません。</li>
+          <li>きたなら訪看の宮﨑香代子さんは「保留」と記載があります。</li>
+          <li>マツノケアグループは10名ですが、氏名が未記載です。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>バス利用者</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>所属</th>
+              <th>人数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>リハデイ　高根木戸</td><td>9名</td></tr>
+            <tr><td>リハデイ　高根公団</td><td>5名</td></tr>
+            <tr><td>リハデイ　習志野台</td><td>5名</td></tr>
+            <tr><td>リハデイ　西習志野</td><td>10名</td></tr>
+            <tr><td>きたなら訪問看護</td><td>8名</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>合計</td>
+              <td>37名</td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="note">実行委員Excel「バス利用者」シート。氏名は未記載です。</p>
+      </div>
+    </section>
+
+    <section id="prizes" class="panel">
+      <header>
+        <h2>景品・配布の方針（案）</h2>
+        <p class="meta">来場240名　／　協賛231万円　／　1・2・3・5等は豊美さん（81万円）　／　4・6・7等は運営（150万円）</p>
+        <div class="summary">
+          <div><span>来場</span><strong>240名</strong></div>
+          <div><span>1〜6等</span><strong>84名</strong></div>
+          <div><span>7等</span><strong>156名</strong></div>
+          <div><span>景品合計</span><strong>231万円</strong></div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>等級の配分（240名・231万円）</h2>
+        <div class="summary">
+          <div><span>豊美さんが購入</span><strong>1・2・3・5等</strong></div>
+          <div><span>点数</span><strong>28点</strong></div>
+          <div><span>金額</span><strong>81万円</strong></div>
+          <div><span>運営が購入</span><strong>4・6・7等</strong></div>
+        </div>
+        <p class="note">1等15万円×1、2等8万円×2、3等4万円×5、5等1.5万円×20。運営は150万円・212点です。</p>
+        <table>
+          <thead>
+            <tr>
+              <th>等級</th>
+              <th>内容</th>
+              <th>単価</th>
+              <th>人数</th>
+              <th>小計</th>
+              <th>購入</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">150,000円</td>
+              <td>1名</td>
+              <td class="yen">150,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>2等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">80,000円</td>
+              <td>2名</td>
+              <td class="yen">160,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>3等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">40,000円</td>
+              <td>5名</td>
+              <td class="yen">200,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>4等</td>
+              <td>ディズニーペア</td>
+              <td class="yen">26,000円</td>
+              <td>10名</td>
+              <td class="yen">260,000円</td>
+              <td>運営</td>
+            </tr>
+            <tr>
+              <td>5等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">15,000円</td>
+              <td>20名</td>
+              <td class="yen">300,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>6等</td>
+              <td>カタログギフト</td>
+              <td class="yen">10,000円</td>
+              <td>46名</td>
+              <td class="yen">460,000円</td>
+              <td>運営</td>
+            </tr>
+            <tr>
+              <td>7等</td>
+              <td>景品</td>
+              <td class="yen">5,000円</td>
+              <td>156名</td>
+              <td class="yen">780,000円</td>
+              <td>運営</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">合計</td>
+              <td>240名</td>
+              <td class="yen">2,310,000円</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="note">豊美さんが買うのは1等・2等・3等・5等です。81万円、28点（1等1、2等2、3等5、5等20）。4等・6等・7等は運営が買います。150万円、212点です。西村先生の20万円を除いた協賛231万円を、来場240名に配ります。</p>
+      </div>
+    </section>
+
+    </section>
+
+    <section id="slides" class="panel">
+      <header>
+        <h2>事業所紹介スライド</h2>
+        <p class="meta">1 事業所の紹介　／　2 写真　／　3 来年に向けて</p>
+      </header>
+      <div class="card">
+        <div class="deck-stage" id="deck-stage">
+          <article class="mini-slide is-on">
+            <div class="slide-top"></div>
+            <p class="slide-h"><em>01</em>事業所の紹介</p>
+            <p class="slide-title slide-name-lg">記入例デイサービス</p>
+            <p class="slide-kind">リハビリ特化型デイサービス</p>
+            <div class="slide-facts">
+              <div><span>場所</span><strong>〇〇市</strong></div>
+              <div><span>スタッフ</span><strong>12名</strong></div>
+              <div><span>内容</span><strong>リハ・入浴</strong></div>
+            </div>
+            <p class="slide-label">大切にしていること</p>
+            <div class="slide-ideas">
+              <div><em>01</em>その人のペースで</div>
+              <div><em>02</em>できたを一緒に</div>
+              <div><em>03</em>暮らしにつなぐ</div>
+            </div>
+            <p class="slide-foot"><span>ALTRY GROUP　記入例</span><span>1 / 3</span></p>
+          </article>
+          <article class="mini-slide">
+            <div class="slide-top"></div>
+            <p class="slide-h"><em>02</em>写真</p>
+            <div class="slide-photos photo-only">
+              <div><span class="ph-no">01</span><span class="ph-hint">写真</span><strong>朝の体操</strong></div>
+              <div><span class="ph-no">02</span><span class="ph-hint">写真</span><strong>みんなで昼食</strong></div>
+              <div><span class="ph-no">03</span><span class="ph-hint">写真</span><strong>季節の外出</strong></div>
+            </div>
+            <p class="slide-foot"><span>ALTRY GROUP　記入例</span><span>2 / 3</span></p>
+          </article>
+          <article class="mini-slide close-slide">
+            <div class="slide-top"></div>
+            <p class="slide-kicker">来年に向けて</p>
+            <p class="slide-title">来年も、いつものところで。</p>
+            <div class="slide-rule"></div>
+            <p class="slide-sub">紹介</p>
+            <p class="slide-name">山田 花子　　管理者</p>
+            <p class="slide-thanks"><span>ALTRY GROUP</span><span>ありがとうございました</span><span>3 / 3</span></p>
+          </article>
+        </div>
+        <div class="deck-nav">
+          <button type="button" id="slide-prev">前へ</button>
+          <span id="slide-count">1 / 3</span>
+          <button type="button" id="slide-next">次へ</button>
+        </div>
+        <p class="note">これは記入例です。各事業所は【事業所名】などのオレンジの文字を書き換えて使います。編集用のファイルは 紹介スライド\2026忘年会_事業所紹介フォーマット.pptx です。</p>
+      </div>
+    </section>
+
+    <section id="budget" class="panel">
+      <header>
+        <h2>金額の内訳（案）</h2>
+        <p class="meta">会場費等は各会社本体　／　240名で2,508,350円、1名につき1万円増減　／　景品は協賛231万円（240名）</p>
+        <div class="summary">
+          <div><span>会場費等（税込）</span><strong class="js-venue-incl">2,508,350円</strong></div>
+          <div><span>抽選・景品</span><strong>2,310,000円</strong></div>
+          <div><span>総額</span><strong class="js-grand-total">4,818,350円</strong></div>
+          <div><span>来場想定</span><strong class="js-guest-label">240名</strong></div>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2>資金の分け方</h2>
+        <div class="org-grid">
+          <div class="org">
+            <h3>A. 会場・運営</h3>
+            <p>会場費・飲食など（見積総計）<br>負担：<strong>各会社本体</strong><br>金額：<strong class="js-venue-incl">2,108,350円</strong>（税込）</p>
+          </div>
+          <div class="org">
+            <h3>B. 抽選・景品</h3>
+            <p>1等〜7等（来場240名）<br>原資：<strong>協賛者 18名・231万円</strong><br>購入：<strong>豊美さん81万円</strong>（1・2・3・5等）　／　運営150万円（4・6・7等）</p>
+          </div>
+        </div>
+        <p class="note">矢島さん確認：200名を超えても事業部負担はなし。会場費等は各会社本体から出す。</p>
+      </div>
+
+            <div class="card">
+        <h2>B. 抽選・景品（協賛 231万円・240名）</h2>
+        <div class="legend">
+          <span><i style="background:#c45c26"></i>1等 15万円</span>
+          <span><i style="background:#e07a3d"></i>2等 16万円</span>
+          <span><i style="background:#f0a202"></i>3等 20万円</span>
+          <span><i style="background:#7c5cbf"></i>4等 26万円</span>
+          <span><i style="background:#3d8bfd"></i>5等 30万円</span>
+          <span><i style="background:#2a9d8f"></i>6等 46万円</span>
+          <span><i style="background:#8d99ae"></i>7等 78万円</span>
+        </div>
+        <div class="bar" title="231万円の内訳">
+          <span style="width:6.49%; background:#c45c26"></span>
+          <span style="width:6.93%; background:#e07a3d"></span>
+          <span style="width:8.66%; background:#f0a202"></span>
+          <span style="width:11.26%; background:#7c5cbf"></span>
+          <span style="width:12.99%; background:#3d8bfd"></span>
+          <span style="width:19.91%; background:#2a9d8f"></span>
+          <span style="width:33.76%; background:#8d99ae"></span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>等級</th>
+              <th>内容</th>
+              <th>単価</th>
+              <th>人数</th>
+              <th>金額</th>
+              <th>購入</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">150,000円</td>
+              <td>1名</td>
+              <td class="yen">150,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>2等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">80,000円</td>
+              <td>2名</td>
+              <td class="yen">160,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>3等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">40,000円</td>
+              <td>5名</td>
+              <td class="yen">200,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>4等</td>
+              <td>ディズニーペア</td>
+              <td class="yen">26,000円</td>
+              <td>10名</td>
+              <td class="yen">260,000円</td>
+              <td>運営</td>
+            </tr>
+            <tr>
+              <td>5等</td>
+              <td>景品 <span class="buyer">豊美さん</span></td>
+              <td class="yen">15,000円</td>
+              <td>20名</td>
+              <td class="yen">300,000円</td>
+              <td><span class="buyer">豊美さん</span></td>
+            </tr>
+            <tr>
+              <td>6等</td>
+              <td>カタログギフト</td>
+              <td class="yen">10,000円</td>
+              <td>46名</td>
+              <td class="yen">460,000円</td>
+              <td>運営</td>
+            </tr>
+            <tr>
+              <td>7等</td>
+              <td>景品</td>
+              <td class="yen">5,000円</td>
+              <td>156名</td>
+              <td class="yen">780,000円</td>
+              <td>運営</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">B 小計</td>
+              <td>240名</td>
+              <td class="yen">2,310,000円</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="note">豊美さん81万円（1等15万、2等16万、3等20万、5等30万）。運営150万円（4等26万、6等46万、7等78万）。240名で231万円ちょうどです。</p>
+      </div>
+    </section>
+
+    <footer>作成日：2026年9月14日　／　確認用（案）</footer>
+  </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll(".tabs button");
+      var panels = document.querySelectorAll(".panel");
+      var printSheetBtn = document.getElementById("print-sheet");
+
+      function show(id) {
+        buttons.forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-tab") === id);
+        });
+        panels.forEach(function (panel) {
+          panel.classList.toggle("active", panel.id === id);
+        });
+        if (printSheetBtn) {
+          printSheetBtn.hidden = (id !== "program" && id !== "sponsors" && id !== "tasks");
+        }
+        var page = document.querySelector(".page");
+        if (page) page.classList.toggle("is-notice", id === "notice");
+        if (history.replaceState) {
+          history.replaceState(null, "", "#" + id);
+        } else {
+          location.hash = id;
+        }
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          show(btn.getAttribute("data-tab"));
+          window.scrollTo(0, 0);
+        });
+      });
+
+      var initial = (location.hash || "#program").replace("#", "");
+      if (!document.getElementById(initial)) initial = "program";
+      show(initial);
+
+      (function () {
+        var slides = document.querySelectorAll("#deck-stage .mini-slide");
+        var countEl = document.getElementById("slide-count");
+        var i = 0;
+        function go(n) {
+          if (!slides.length) return;
+          i = (n + slides.length) % slides.length;
+          slides.forEach(function (el, idx) { el.classList.toggle("is-on", idx === i); });
+          if (countEl) countEl.textContent = (i + 1) + " / " + slides.length;
+        }
+        var prev = document.getElementById("slide-prev");
+        var next = document.getElementById("slide-next");
+        if (prev) prev.addEventListener("click", function () { go(i - 1); });
+        if (next) next.addEventListener("click", function () { go(i + 1); });
+      })();
+
+      function printSheet(tabId) {
+        show(tabId);
+        setTimeout(function () {
+          window.print();
+        }, 50);
+      }
+      if (printSheetBtn) {
+        printSheetBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          var active = document.querySelector(".panel.active");
+          printSheet(active && (active.id === "sponsors" || active.id === "program" || active.id === "tasks") ? active.id : "program");
+        });
+      }
+
+      var roster = [{"org":"ALTWELL","group":"ALTWELL","full":"ALTWELL","count":6,"people":[{"name":"矢島 崇光"},{"name":"北嶋 裕之"},{"name":"渡部 龍一"},{"name":"佐藤 秀幸"},{"name":"小野寺 弥生"},{"name":"松浦 寛"}]},{"org":"ミツケル","group":"ミツケル","full":"ミツケル","count":15,"people":[{"name":"平野 貴之"},{"name":"小澤 一嘉"},{"name":"髙瀬 義幸"},{"name":"小澤 幸治"},{"name":"岡田 めぐみ"},{"name":"茂木 翔太"},{"name":"小栁 紗希"},{"name":"栗原 香織"},{"name":"鈴木 恭平"},{"name":"宇野 紀子"},{"name":"杉田 鮎美"},{"name":"石川 隼也"},{"name":"塩田 史"},{"name":"鶴槇 正子"},{"name":"陳 玟含"}]},{"org":"湖北台診療所","group":"医療法人","full":"医療法人社団ALTRY / 湖北台診療所","count":5,"people":[{"name":"小林 宏彰"},{"name":"河津 秋子"},{"name":"上島 悟美"},{"name":"竹島 しのぶ"},{"name":"大木 絢"}]},{"org":"のがたクリニック","group":"医療法人","full":"医療法人社団ALTRY / のがたクリニック","count":16,"people":[{"name":"和久井 真司"},{"name":"西村 健二"},{"name":"渡邊 幸康"},{"name":"堀切 大介"},{"name":"常泉 千賀"},{"name":"藤田 亞子"},{"name":"十日市 里美"},{"name":"北山 祐美"},{"name":"渡邊 新"},{"name":"甲斐 智美"},{"name":"本橋 こずえ"},{"name":"鈴木 聡子"},{"name":"渡邉 心羽"},{"name":"銘苅 エミ"},{"name":"河田 早弥佳"},{"name":"佐久間 愛"}]},{"org":"みんなの血管外科池袋","group":"医療法人","full":"医療法人社団ALTRY / みんなの血管外科池袋","count":12,"people":[{"name":"服部 努"},{"name":"田中 克典"},{"name":"金岡 祐司"},{"name":"高橋 侑子"},{"name":"森木 美佳"},{"name":"小栁 結花"},{"name":"小松 由佳"},{"name":"飯塚 由香里"},{"name":"宮崎 愛"},{"name":"野上 祐希菜"},{"name":"戸邉 祐香里"},{"name":"小川 桃子"}]},{"org":"湯沢クリニック","group":"医療法人","full":"医療法人社団晃正会 / 湯沢クリニック","count":11,"people":[{"name":"湯澤 晃雄"},{"name":"湯澤 明子"},{"name":"板倉 美樹"},{"name":"青木 真理子"},{"name":"伊藤 めぐみ"},{"name":"宮田 政美"},{"name":"林 幸子"},{"name":"山口 牧子"},{"name":"池田 亜紀子"},{"name":"下村 愛実"},{"name":"佐々木 かおり"}]},{"org":"つくし苑","group":"介護","full":"ALTWELL HHC / つくし苑 / つくし介護サービス","count":6,"people":[{"name":"渡部友樹"},{"name":"成澤広之"},{"name":"茅原典子"},{"name":"中嶋律子"},{"name":"早川涼寿"},{"name":"葛岡快"}]},{"org":"高根木戸","group":"デイ","full":"ALTWELLDAY / いつものところ 高根木戸","count":9,"people":[{"name":"織戸 久高"},{"name":"小林 唯"},{"name":"上田 友美"},{"name":"村山 卓也"},{"name":"江川 真優美"},{"name":"秋谷 直樹"},{"name":"池田 泉美"},{"name":"白井 愛子"},{"name":"豊田 里美"}]},{"org":"高根公団","group":"デイ","full":"ALTWELLDAY / いつものところ 高根公団","count":3,"people":[{"name":"渡邉 千恵"},{"name":"浜野 達男"},{"name":"篠原 隆汰"},{"name":"牧田さん？？","note":"未確認","flag":true}]},{"org":"習志野台","group":"デイ","full":"ALTWELLDAY / かちありき 習志野台","count":6,"people":[{"name":"月足 純也"},{"name":"鈴木 舞子"},{"name":"阿部 健一"},{"name":"泉 敬"},{"name":"平田 優理"},{"name":"染谷 太一"}]},{"org":"西習志野","group":"デイ","full":"ALTWELLDAY / いつものところ 西習志野","count":17,"people":[{"name":"今関 昇子"},{"name":"下村 昌代"},{"name":"青栁 和義"},{"name":"田口 文隆"},{"name":"浅利 美恵"},{"name":"石森 和恵"},{"name":"岩本 一枝"},{"name":"佐藤 真智子"},{"name":"杉山 優希"},{"name":"長崎 祐一"},{"name":"杠 智子"},{"name":"関口 誠"},{"name":"髙島 松雄"},{"name":"岩崎 広夢"},{"name":"齋藤 光恵"},{"name":"能登谷 宏美"},{"name":"後藤 光竜"}]},{"org":"本八幡","group":"デイ","full":"ALTWELLDAY / いつものところ 本八幡","count":3,"people":[{"name":"岩本 愛美"},{"name":"島田 亜矢子"},{"name":"薦田一生"},{"name":"←プラス東さん？","note":"未確認","flag":true}]},{"org":"トライ葛西","group":"デイ","full":"ALTWELLDAY / トライ 葛西","count":10,"people":[{"name":"加藤 美香"},{"name":"佐藤 和恵"},{"name":"後藤 奈穂子"},{"name":"大森 久美子"},{"name":"矢﨑 結香"},{"name":"有田 瞳"},{"name":"柳 崚太"},{"name":"渡邊 直子"},{"name":"奥田 亜希子"},{"name":"西澤 麻衣"}]},{"org":"トライ南砂","group":"デイ","full":"ALTWELLDAY / トライ 南砂","count":6,"people":[{"name":"木村 大樹"},{"name":"八木 晃大"},{"name":"長峯 飛翔"},{"name":"池田 久留美"},{"name":"田上 有紀子"},{"name":"箕輪 夕子"}]},{"org":"トライ行徳","group":"デイ","full":"ALTWELLDAY / トライ 行徳","count":11,"people":[{"name":"善財 大輔"},{"name":"大原 幸"},{"name":"長谷川 由美"},{"name":"小松 陽子"},{"name":"早川 香"},{"name":"佐々木 望加"},{"name":"小原 幸子"},{"name":"バルマ 由理"},{"name":"星野 智彦"},{"name":"加賀谷 文夫"},{"name":"和栗 幸弘"}]},{"org":"トライ本部","group":"デイ","full":"ALTWELLDAY / トライ 本部","count":1,"people":[{"name":"齋藤 陽子"}]},{"org":"あしすと","group":"あしすと","full":"ALTWELLAssist / あしすと鍼灸マッサージ院","count":15,"people":[{"name":"河北"},{"name":"多胡"},{"name":"佐藤恵"},{"name":"川口"},{"name":"末永"},{"name":"伊藤"},{"name":"中野"},{"name":"山内"},{"name":"植根"},{"name":"佐藤栄二"},{"name":"板垣"},{"name":"関"},{"name":"照喜納"},{"name":"海野"},{"name":"森野"}]},{"org":"きたなら訪看","group":"訪看","full":"ALTWELLNURSE / きたなら訪問看護リハビリテーション","count":13,"people":[{"name":"栁田 隆志"},{"name":"府川 久美子"},{"name":"秋田 百合菜"},{"name":"山下 直子"},{"name":"河野 千尋"},{"name":"篠田 功一"},{"name":"友成 多恵子"},{"name":"石垣 優子"},{"name":"早田 公子"},{"name":"菅井 眸"},{"name":"富田 義人"},{"name":"河塚 里奈"},{"name":"宮﨑 香代子","note":"保留"}]},{"org":"あむ訪看","group":"訪看","full":"ALTWELLNURSE / あむ訪問看護ステーション","count":20,"people":[{"name":"西田"},{"name":"谷"},{"name":"渡井"},{"name":"水野"},{"name":"古谷"},{"name":"財津"},{"name":"加藤"},{"name":"堀江"},{"name":"澤田"},{"name":"吉田"},{"name":"内田"},{"name":"安木"},{"name":"水野"},{"name":"土井"},{"name":"篠崎"},{"name":"磯部"},{"name":"北川"},{"name":"岩崎"},{"name":"圓山"},{"name":"大川"}]},{"org":"ちょうふ自立応援団","group":"介護","full":"ALTWELLCARE / ちょうふ自立応援団","count":4,"people":[{"name":"新井田 和樹"},{"name":"長田 由紀子"},{"name":"平野 敦子"},{"name":"安藤 ゆかり"}]},{"org":"マツノケアグループ","group":"マツノケア","full":"マツノケアグループ","count":10,"people":[]}];
+      var rosterGroup = "";
+      var rosterFilters = [
+        { id: "", label: "すべて" },
+        { id: "ALTWELL", label: "ALTWELL" },
+        { id: "ミツケル", label: "ミツケル" },
+        { id: "医療法人", label: "医療法人" },
+        { id: "デイ", label: "デイ" },
+        { id: "介護", label: "介護" },
+        { id: "あしすと", label: "あしすと" },
+        { id: "訪看", label: "訪問看護" },
+        { id: "マツノケア", label: "マツノケア" }
+      ];
+
+      function rosterQuery() {
+        var el = document.getElementById("roster-q");
+        return el ? el.value.replace(/\s+/g, "").toLowerCase() : "";
+      }
+
+      function renderRoster() {
+        var box = document.getElementById("roster-orgs");
+        var filtersEl = document.getElementById("roster-filters");
+        var resultEl = document.getElementById("roster-result");
+        if (!box) return;
+        var q = rosterQuery();
+        if (filtersEl && !filtersEl.dataset.ready) {
+          filtersEl.innerHTML = rosterFilters.map(function (f) {
+            return '<button type="button" data-group="' + f.id + '">' + f.label + "</button>";
+          }).join("");
+          filtersEl.dataset.ready = "1";
+          filtersEl.addEventListener("click", function (e) {
+            var btn = e.target.closest("button");
+            if (!btn) return;
+            rosterGroup = btn.getAttribute("data-group") || "";
+            renderRoster();
+          });
+        }
+        if (filtersEl) {
+          filtersEl.querySelectorAll("button").forEach(function (btn) {
+            btn.classList.toggle("active", (btn.getAttribute("data-group") || "") === rosterGroup);
+          });
+        }
+        var shownPeople = 0;
+        var shownOrgs = 0;
+        var html = "";
+        roster.forEach(function (org) {
+          if (rosterGroup && org.group !== rosterGroup) return;
+          var people = org.people.filter(function (p) {
+            if (!q) return true;
+            var hay = (p.name + org.org + org.full + (p.note || "")).replace(/\s+/g, "").toLowerCase();
+            return hay.indexOf(q) !== -1;
+          });
+          if (q && !people.length && org.count && !org.people.length) {
+            var hay = (org.org + org.full).replace(/\s+/g, "").toLowerCase();
+            if (hay.indexOf(q) === -1) return;
+          } else if (q && !people.length) {
+            return;
+          }
+          shownOrgs += 1;
+          shownPeople += people.length;
+          html += '<div class="card roster-org"><h3>' + org.org + "</h3>";
+          html += '<p class="meta">' + org.full + "　／　" + org.count + "名</p>";
+          if (!org.people.length) {
+            html += '<p class="name-empty">氏名未記載（' + org.count + "名）</p>";
+          } else {
+            html += '<ol class="name-grid">';
+            org.people.forEach(function (p, i) {
+              if (people.indexOf(p) < 0) return;
+              var cls = p.flag || p.note ? " pending" : "";
+              var hit = q ? " roster-hit" : "";
+              var note = p.note ? ' <span class="note">（' + p.note + "）</span>" : "";
+              html += '<li class="' + cls + hit + '"><span class="num">' + (i + 1) + "</span><span>" + p.name + note + "</span></li>";
+            });
+            html += "</ol>";
+          }
+          html += "</div>";
+        });
+        box.innerHTML = html || '<div class="card"><p class="name-empty">該当する氏名はありません。</p></div>';
+        if (resultEl) {
+          resultEl.textContent = q || rosterGroup
+            ? "表示 " + shownOrgs + "所属　／　" + shownPeople + "名"
+            : "21所属　／　氏名記載189名＋氏名未記載10名＝199名（ほか未確認2名）";
+        }
+      }
+
+      var rosterQ = document.getElementById("roster-q");
+      if (rosterQ) {
+        rosterQ.addEventListener("input", renderRoster);
+      }
+      renderRoster();
+
+      var PREP_TASKS = [
+        { id: "t1", task: "景品準備のとりまとめ", who: "代表者", due: "2026-09-25", note: "協賛者で準備するか、お任せで準備するか" },
+        { id: "t2", task: "豊美さんへプレゼント情報をお渡しする", who: "鈴木・石川", due: "2026-09-30", note: "1等・2等・3等・5等。81万円・28点" },
+        { id: "t3", task: "最終案内チラシ作成・配布", who: "鈴木・石川", due: "2026-10-10", note: "確定時間・服装等・会場案内・クローク・喫煙 作成10/10" },
+        { id: "t4", task: "最終出欠", who: "鈴木・佐藤（石川）", due: "2026-10-31", note: "" },
+        { id: "t5", task: "オープニングムービー作成", who: "鈴木・石川", due: "2026-11-15", note: "" },
+        { id: "t7", task: "景品リスト", who: "出品者&豊美さん", due: "2026-11-15", note: "リストを貰う" },
+        { id: "t10", task: "代表者（重役）へ当日スケジュールの共有", who: "佐藤", due: "2026-11-30", note: "時間がギリギリということを把握してもらう" },
+        { id: "t6", task: "会社・事業部代表者 紹介資料提出期限", who: "代表者＆佐藤", due: "2026-12-04", note: "" },
+        { id: "t8", task: "景品紹介用スライド", who: "鈴木", due: "2026-12-04", note: "" },
+        { id: "t11", task: "受付名簿", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "" },
+        { id: "t12", task: "会場レイアウト", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "机配置・席位置・プロジェクター位置 半・立食 場所は決める。" },
+        { id: "t13", task: "司会進行用台本", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "" },
+        { id: "t14", task: "スケジュール表作成", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "各机に１部ずつ置いておく" },
+        { id: "t15", task: "席次表", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "" },
+        { id: "t16", task: "抽選箱作成", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "" },
+        { id: "t17", task: "名札", who: "鈴木・石川・佐藤", due: "2026-12-04", note: "" }
+      ];
+      var HOTEL_ITEMS = [
+        "最終人数の連絡期日",
+        "レイアウト　イス　テーブル数 ひとテーブル何人？",
+        "料理置く位置",
+        "ビーフカレー",
+        "プロジェクター数",
+        "マイク数",
+        "HDMI貸出",
+        "クローク場所",
+        "喫煙所"
+      ];
+      var TASK_DONE_KEY = "bonenkai-2026-prep-done";
+      var HOTEL_ANS_KEY = "bonenkai-2026-hotel-answers";
+      var taskWho = "";
+      var taskState = "";
+      var taskDone = {};
+      var hotelAnswers = {};
+      try {
+        taskDone = JSON.parse(localStorage.getItem(TASK_DONE_KEY) || "{}") || {};
+      } catch (err) { taskDone = {}; }
+      try {
+        hotelAnswers = JSON.parse(localStorage.getItem(HOTEL_ANS_KEY) || "{}") || {};
+      } catch (err) { hotelAnswers = {}; }
+
+      function persistTaskDone() {
+        try { localStorage.setItem(TASK_DONE_KEY, JSON.stringify(taskDone)); } catch (err) {}
+      }
+      function persistHotelAnswers() {
+        try { localStorage.setItem(HOTEL_ANS_KEY, JSON.stringify(hotelAnswers)); } catch (err) {}
+      }
+      function parseDue(iso) {
+        return new Date(iso + "T00:00:00");
+      }
+      function todayStart() {
+        var t = new Date();
+        t.setHours(0, 0, 0, 0);
+        return t;
+      }
+      function daysUntil(iso) {
+        return Math.round((parseDue(iso) - todayStart()) / 86400000);
+      }
+      function formatDue(iso) {
+        var d = parseDue(iso);
+        var w = ["日", "月", "火", "水", "木", "金", "土"][d.getDay()];
+        return (d.getMonth() + 1) + "/" + d.getDate() + "（" + w + "）";
+      }
+      function formatDueLong(iso) {
+        var d = parseDue(iso);
+        var w = ["日", "月", "火", "水", "木", "金", "土"][d.getDay()];
+        return (d.getMonth() + 1) + "月" + d.getDate() + "日（" + w + "）";
+      }
+      function dueLabel(days, done) {
+        if (done) return { text: "完了", cls: "tag-done" };
+        if (days < 0) return { text: "期限切れ", cls: "tag-overdue" };
+        if (days === 0) return { text: "本日", cls: "tag-overdue" };
+        if (days <= 7) return { text: "あと" + days + "日", cls: "tag-soon" };
+        return { text: "あと" + days + "日", cls: "tag-ok" };
+      }
+      function whoMatch(who, filter) {
+        if (!filter) return true;
+        return who.indexOf(filter) !== -1;
+      }
+
+      function renderTasks() {
+        var body = document.getElementById("task-body");
+        var whoEl = document.getElementById("task-who-filters");
+        var stateEl = document.getElementById("task-state-filters");
+        var resultEl = document.getElementById("task-result");
+        if (!body) return;
+
+        var whoFilters = [
+          { id: "", label: "すべて" },
+          { id: "鈴木", label: "鈴木" },
+          { id: "石川", label: "石川" },
+          { id: "佐藤", label: "佐藤" },
+          { id: "代表者", label: "代表者" },
+          { id: "出品者", label: "出品者" },
+          { id: "豊美", label: "豊美さん" }
+        ];
+        var stateFilters = [
+          { id: "", label: "すべての状態" },
+          { id: "open", label: "未完了" },
+          { id: "soon", label: "7日以内" },
+          { id: "overdue", label: "期限切れ" },
+          { id: "done", label: "完了" }
+        ];
+        if (whoEl && !whoEl.dataset.ready) {
+          whoEl.innerHTML = whoFilters.map(function (f) {
+            return '<button type="button" data-who="' + f.id + '">' + f.label + "</button>";
+          }).join("");
+          whoEl.dataset.ready = "1";
+          whoEl.addEventListener("click", function (e) {
+            var btn = e.target.closest("button");
+            if (!btn) return;
+            taskWho = btn.getAttribute("data-who") || "";
+            renderTasks();
+          });
+        }
+        if (stateEl && !stateEl.dataset.ready) {
+          stateEl.innerHTML = stateFilters.map(function (f) {
+            return '<button type="button" data-state="' + f.id + '">' + f.label + "</button>";
+          }).join("");
+          stateEl.dataset.ready = "1";
+          stateEl.addEventListener("click", function (e) {
+            var btn = e.target.closest("button");
+            if (!btn) return;
+            taskState = btn.getAttribute("data-state") || "";
+            renderTasks();
+          });
+        }
+        if (whoEl) {
+          whoEl.querySelectorAll("button").forEach(function (btn) {
+            btn.classList.toggle("active", (btn.getAttribute("data-who") || "") === taskWho);
+          });
+        }
+        if (stateEl) {
+          stateEl.querySelectorAll("button").forEach(function (btn) {
+            btn.classList.toggle("active", (btn.getAttribute("data-state") || "") === taskState);
+          });
+        }
+
+        var openN = 0;
+        var overdueN = 0;
+        var nextDue = null;
+        PREP_TASKS.forEach(function (t) {
+          var done = !!taskDone[t.id];
+          var days = daysUntil(t.due);
+          if (!done) {
+            openN += 1;
+            if (days < 0) overdueN += 1;
+            if (!nextDue || t.due < nextDue) nextDue = t.due;
+          }
+        });
+        var nextEl = document.getElementById("task-next");
+        var openEl = document.getElementById("task-open");
+        var nEl = document.getElementById("task-n");
+        if (nEl) nEl.textContent = String(PREP_TASKS.length);
+        if (openEl) openEl.textContent = String(openN);
+        if (nextEl) nextEl.textContent = nextDue ? formatDue(nextDue) : "なし";
+
+        var html = "";
+        var lastDue = "";
+        var shown = 0;
+        var sortedTasks = PREP_TASKS.slice().sort(function (a, b) {
+          if (a.due < b.due) return -1;
+          if (a.due > b.due) return 1;
+          return 0;
+        });
+        sortedTasks.forEach(function (t) {
+          var done = !!taskDone[t.id];
+          var days = daysUntil(t.due);
+          if (!whoMatch(t.who, taskWho)) return;
+          if (taskState === "open" && done) return;
+          if (taskState === "done" && !done) return;
+          if (taskState === "overdue" && (done || days >= 0)) return;
+          if (taskState === "soon" && (done || days < 0 || days > 7)) return;
+          shown += 1;
+          if (t.due !== lastDue) {
+            lastDue = t.due;
+            var groupDays = daysUntil(t.due);
+            var groupNote = groupDays < 0 ? "期限切れ" : (groupDays === 0 ? "本日" : "あと" + groupDays + "日");
+            html += '<tr class="task-group"><td colspan="5">' + formatDueLong(t.due) + "　／　" + groupNote + "</td></tr>";
+          }
+          var st = dueLabel(days, done);
+          var rowCls = done ? "task-done" : (days < 0 ? "task-overdue" : (days <= 7 ? "task-soon" : ""));
+          html += '<tr class="' + rowCls + '" data-id="' + t.id + '">' +
+            '<td class="task-check"><input type="checkbox"' + (done ? " checked" : "") + ' aria-label="' + t.task + '"></td>' +
+            '<td class="task-due">' + formatDue(t.due) + '<div><span class="tag ' + st.cls + '">' + st.text + "</span></div></td>" +
+            "<td>" + t.task + "</td>" +
+            '<td class="task-who">' + t.who + "</td>" +
+            "<td>" + (t.note || "—") + "</td>" +
+            "</tr>";
+        });
+        body.innerHTML = html || '<tr><td colspan="5" class="name-empty">該当するタスクはありません。</td></tr>';
+        if (resultEl) {
+          resultEl.textContent = (taskWho || taskState)
+            ? "表示 " + shown + "件　／　未完了 " + openN + "件" + (overdueN ? "　／　期限切れ " + overdueN + "件" : "")
+            : "全" + PREP_TASKS.length + "件　／　未完了 " + openN + "件" + (overdueN ? "　／　期限切れ " + overdueN + "件" : "");
+        }
+
+        var hotelBody = document.getElementById("hotel-body");
+        var hotelOpenEl = document.getElementById("hotel-open");
+        if (hotelBody && !hotelBody.dataset.ready) {
+          hotelBody.innerHTML = HOTEL_ITEMS.map(function (item, i) {
+            var val = hotelAnswers[item] || "";
+            return "<tr><td>" + item + '</td><td><input class="hotel-answer" data-i="' + i + '" data-item="' + item.replace(/"/g, "&quot;") + '" value="' + String(val).replace(/"/g, "&quot;") + '" placeholder="未回答"></td></tr>';
+          }).join("");
+          hotelBody.dataset.ready = "1";
+          hotelBody.addEventListener("input", function (e) {
+            var inp = e.target.closest(".hotel-answer");
+            if (!inp) return;
+            var item = inp.getAttribute("data-item");
+            hotelAnswers[item] = inp.value;
+            persistHotelAnswers();
+            updateHotelOpen();
+          });
+        }
+        updateHotelOpen();
+      }
+
+      function updateHotelOpen() {
+        var n = 0;
+        HOTEL_ITEMS.forEach(function (item) {
+          if (!(hotelAnswers[item] || "").trim()) n += 1;
+        });
+        var el = document.getElementById("hotel-open");
+        if (el) el.textContent = String(n);
+      }
+
+      var taskBody = document.getElementById("task-body");
+      if (taskBody) {
+        taskBody.addEventListener("change", function (e) {
+          var inp = e.target;
+          if (!inp || inp.type !== "checkbox") return;
+          var tr = inp.closest("tr");
+          if (!tr) return;
+          var id = tr.getAttribute("data-id");
+          if (!id) return;
+          if (inp.checked) taskDone[id] = 1;
+          else delete taskDone[id];
+          persistTaskDone();
+          renderTasks();
+        });
+      }
+      renderTasks();
+
+      var TOTAL = 2310000;
+      var STAR_UNIT = 3000;
+      var SCRATCH_UNIT = 300;
+      var VENUE_BASE = 2108350;
+      var VENUE_BASE_N = 200;
+      var VENUE_PER = 10000;
+      var sponsors = [
+        { name: "矢島さん", prize: "矢島賞", yen: 200000, people: 10 },
+        { name: "和久井先生", prize: "和久井賞", yen: 200000, people: 10 },
+        { name: "服部先生", prize: "服部賞", yen: 200000, people: 10 },
+        { name: "小林先生", prize: "小林賞", yen: 200000, people: 10 },
+        { name: "田中先生", prize: "田中賞", yen: 200000, people: 10 },
+        { name: "金岡先生", prize: "金岡賞", yen: 200000, people: 10 },
+        { name: "佐藤さん", prize: "佐藤賞", yen: 200000, people: 10 },
+        { name: "湯澤先生", prize: "湯澤賞", yen: 200000, people: 10 },
+        { name: "渡部さん", prize: "渡部賞", yen: 100000, people: 5 },
+        { name: "北嶋さん", prize: "北嶋賞", yen: 100000, people: 5 },
+        { name: "河北さん", prize: "河北賞", yen: 100000, people: 5 },
+        { name: "松野さん", prize: "松野賞", yen: 100000, people: 5 },
+        { name: "平野さん", prize: "平野賞", yen: 200000, people: 10 },
+        { name: "渡邊先生", prize: "渡邊賞", yen: 30000, people: 3 },
+        { name: "小澤一嘉さん", prize: "小澤一嘉賞", yen: 20000, people: 1 },
+        { name: "小澤幸治さん", prize: "小澤幸治賞", yen: 20000, people: 1 },
+        { name: "髙瀬さん", prize: "髙瀬賞", yen: 20000, people: 1 },
+        { name: "岡田さん", prize: "岡田賞", yen: 20000, people: 1 }
+      ];
+
+      function peopleMaxFor(yenAmt) {
+        if (yenAmt >= 200000) return 10;
+        if (yenAmt >= 100000) return 5;
+        return 0;
+      }
+      function defaultPeopleFor(yenAmt) {
+        if (yenAmt >= 200000) return 10;
+        if (yenAmt >= 100000) return 5;
+        if (yenAmt === 30000) return 3;
+        if (yenAmt === 20000) return 1;
+        return 1;
+      }
+
+      function yen(n) {
+        return n.toLocaleString("ja-JP") + "円";
+      }
+      function man(n) {
+        var v = Math.round(n / 10000);
+        return v.toLocaleString("ja-JP") + "万円";
+      }
+      function pct(n) {
+        return (n * 100).toFixed(1);
+      }
+      function allocate(total, weights) {
+        var sum = 0;
+        for (var i = 0; i < weights.length; i++) sum += weights[i];
+        var raw = weights.map(function (w) { return total * w / sum; });
+        var out = raw.map(function (x) { return Math.floor(x); });
+        var used = 0;
+        for (var j = 0; j < out.length; j++) used += out[j];
+        var rest = total - used;
+        var order = raw.map(function (q, i) {
+          return { i: i, r: q - out[i] };
+        }).sort(function (a, b) {
+          return b.r - a.r || a.i - b.i;
+        });
+        for (var k = 0; k < rest; k++) out[order[k].i] += 1;
+        return out;
+      }
+      function setText(sel, text) {
+        document.querySelectorAll(sel).forEach(function (el) { el.textContent = text; });
+      }
+
+      var prizeNState = 100;
+      var guestNState = 240;
+
+      function currentGuests() {
+        return guestNState;
+      }
+
+      function currentPrizeN() {
+        var maxP = Math.min(200, guestNState);
+        return Math.max(20, Math.min(maxP, prizeNState));
+      }
+
+      function render() {
+        var guests = currentGuests();
+        var prizeN = currentPrizeN();
+        var starN = guests - prizeN;
+        var starYen = starN * STAR_UNIT;
+        var scratchYen = guests * SCRATCH_UNIT;
+        var prizeYen = TOTAL - scratchYen - starYen;
+        var prizeAvg = prizeN ? Math.round(prizeYen / prizeN) : 0;
+        var venueIncl = VENUE_BASE + (guests - VENUE_BASE_N) * VENUE_PER;
+        var venueExcl = Math.round(venueIncl / 1.1);
+        var venueTax = venueIncl - venueExcl;
+        var venueAvg = Math.round(venueIncl / guests);
+        var grand = venueIncl + TOTAL;
+        var yenAlloc = sponsors.map(function () { return 0; });
+        var highIdx = [];
+        var highWeights = [];
+        var smallYenTotal = 0;
+        for (var h = 0; h < sponsors.length; h++) {
+          var sh = sponsors[h];
+          if (sh.yen >= 100000) {
+            highIdx.push(h);
+            highWeights.push(sh.yen);
+          } else if (sh.yen === 30000) {
+            yenAlloc[h] = 10000 * 3;
+            smallYenTotal += yenAlloc[h];
+          } else if (sh.yen === 20000) {
+            yenAlloc[h] = 20000 * 1;
+            smallYenTotal += yenAlloc[h];
+          }
+        }
+        var highPool = Math.max(0, prizeYen - smallYenTotal);
+        var highYen = highIdx.length ? allocate(highPool, highWeights) : [];
+        for (var hy = 0; hy < highIdx.length; hy++) yenAlloc[highIdx[hy]] = highYen[hy];
+        var nAlloc = sponsors.map(function (s) {
+          if (s.yen >= 100000) return s.people;
+          if (s.yen === 30000) return 3;
+          if (s.yen === 20000) return 1;
+          return 0;
+        });
+        var nTotal = 0;
+        for (var t = 0; t < nAlloc.length; t++) nTotal += nAlloc[t];
+
+        setText(".js-prize-n", String(prizeN));
+        setText(".js-star-n", String(starN));
+        setText(".js-guest-n", String(guests));
+        setText(".js-guest-label", guests + "名");
+        setText(".js-prize-label", prizeN + "名");
+        setText(".js-star-label", starN + "名");
+        setText(".js-prize-yen", yen(prizeYen));
+        setText(".js-star-yen", yen(starYen));
+        setText(".js-scratch-yen", yen(scratchYen));
+        setText(".js-prize-avg", prizeAvg.toLocaleString("ja-JP"));
+        setText(".js-prize-yen-man", man(prizeYen));
+        setText(".js-star-yen-man", man(starYen));
+        setText(".js-scratch-yen-man", man(scratchYen));
+        setText(".js-prize-pct", pct(prizeYen / TOTAL));
+        setText(".js-star-pct", pct(starYen / TOTAL));
+        setText(".js-scratch-pct", pct(scratchYen / TOTAL));
+        setText(".js-prize-plus-scratch", yen(prizeAvg + SCRATCH_UNIT));
+        setText(".js-prize-head", "来場" + guests + "名　／　景品" + prizeN + "名　／　スタバ" + starN + "名　／　スクラッチは全員");
+        setText(".js-venue-incl", yen(venueIncl));
+        setText(".js-venue-excl", yen(venueExcl));
+        setText(".js-venue-tax", yen(venueTax));
+        setText(".js-venue-avg", venueAvg.toLocaleString("ja-JP"));
+        setText(".js-grand-total", yen(grand));
+
+        var barPrize = document.getElementById("bar-prize");
+        var barGift = document.getElementById("bar-gift");
+        var barScratch = document.getElementById("bar-scratch");
+        if (barPrize) barPrize.style.width = (prizeYen / TOTAL * 100).toFixed(2) + "%";
+        if (barGift) barGift.style.width = (starYen / TOTAL * 100).toFixed(2) + "%";
+        if (barScratch) barScratch.style.width = (scratchYen / TOTAL * 100).toFixed(2) + "%";
+
+        var altScratch200 = guests * 200;
+        var altScratch500 = guests * 500;
+        var alt200 = TOTAL - starYen - altScratch200;
+        var alt500 = TOTAL - starYen - altScratch500;
+        var el200 = document.getElementById("alt-prize-200");
+        var el500 = document.getElementById("alt-prize-500");
+        var avg200 = document.getElementById("alt-avg-200");
+        var avg500 = document.getElementById("alt-avg-500");
+        var sc200 = document.getElementById("alt-scratch-200");
+        var sc500 = document.getElementById("alt-scratch-500");
+        if (el200) el200.textContent = yen(alt200);
+        if (el500) el500.textContent = yen(alt500);
+        if (avg200) avg200.textContent = yen(prizeN ? Math.round(alt200 / prizeN) : 0);
+        if (avg500) avg500.textContent = yen(prizeN ? Math.round(alt500 / prizeN) : 0);
+        if (sc200) sc200.textContent = yen(altScratch200);
+        if (sc500) sc500.textContent = yen(altScratch500);
+
+        var body = document.getElementById("alloc-body");
+        if (body) {
+          var html = "";
+          for (var i = 0; i < sponsors.length; i++) {
+            var s = sponsors[i];
+            var people = nAlloc[i];
+            var each;
+            if (s.yen === 30000) each = 10000;
+            else if (s.yen === 20000) each = 20000;
+            else each = people ? Math.round(yenAlloc[i] / people) : 0;
+            var ratio = (s.yen / TOTAL * 100).toFixed(1);
+            var peopleCell;
+            var maxPeople = peopleMaxFor(s.yen);
+            if (maxPeople) {
+              peopleCell = '<select class="people-select" data-i="' + i + '" aria-label="' + s.prize + 'の目安人数">';
+              for (var p = 1; p <= maxPeople; p++) {
+                peopleCell += '<option value="' + p + '"' + (people === p ? " selected" : "") + ">" + p + "名</option>";
+              }
+              peopleCell += "</select>";
+            } else {
+              peopleCell = people + "名";
+            }
+            html += "<tr>" +
+              '<td class="num">' + (i + 1) + "</td>" +
+              '<td class="' + (s.pending ? "pending" : "prize") + '">' + s.prize + "</td>" +
+              '<td class="yen">' + yen(s.yen) + "</td>" +
+              "<td>" + ratio + "%</td>" +
+              '<td class="yen">' + yen(yenAlloc[i]) + "</td>" +
+              "<td>" + peopleCell + "</td>" +
+              '<td class="yen">' + (people ? yen(each) : "—") + "</td>" +
+              "</tr>";
+          }
+          body.innerHTML = html;
+        }
+        var nTotalEl = document.getElementById("alloc-n-total");
+        var avgEl = document.getElementById("alloc-avg");
+        if (nTotalEl) nTotalEl.textContent = nTotal + "名";
+        if (avgEl) avgEl.textContent = nTotal ? yen(Math.round(prizeYen / nTotal)) : "—";
+
+        document.querySelectorAll(".js-prize-slider").forEach(function (el) {
+          var maxP = Math.min(200, guests);
+          if (el.max !== String(maxP)) el.max = String(maxP);
+          if (el.value !== String(prizeN)) el.value = String(prizeN);
+        });
+        var headSel = document.getElementById("prize-n-select");
+        if (headSel) {
+          var maxP = Math.min(200, guests);
+          if (headSel.options.length !== maxP - 19 || (headSel.options[headSel.options.length - 1] && headSel.options[headSel.options.length - 1].value !== String(maxP))) {
+            var keep = String(prizeN);
+            headSel.innerHTML = "";
+            for (var pn = 20; pn <= maxP; pn++) {
+              var opt = document.createElement("option");
+              opt.value = String(pn);
+              opt.textContent = pn + "名";
+              headSel.appendChild(opt);
+            }
+            headSel.value = keep;
+          } else if (headSel.value !== String(prizeN)) {
+            headSel.value = String(prizeN);
+          }
+        }
+        var guestSel = document.getElementById("guest-n-select");
+        if (guestSel && guestSel.value !== String(guests)) guestSel.value = String(guests);
+        var bulk = document.getElementById("people-bulk");
+        if (bulk) {
+          var highs = sponsors.filter(function (s) { return s.yen >= 100000; });
+          var same = highs.length && highs.every(function (s) { return s.people === highs[0].people; });
+          bulk.value = same ? String(highs[0].people) : "";
+        }
+      }
+
+      var guestSelect = document.getElementById("guest-n-select");
+      if (guestSelect) {
+        for (var gn = 100; gn <= 300; gn++) {
+          var gopt = document.createElement("option");
+          gopt.value = String(gn);
+          gopt.textContent = gn + "名";
+          guestSelect.appendChild(gopt);
+        }
+        guestSelect.value = "240";
+        guestSelect.addEventListener("change", function () {
+          guestNState = parseInt(guestSelect.value, 10);
+          if (prizeNState > guestNState) prizeNState = guestNState;
+          render();
+        });
+      }
+
+      var prizeSelect = document.getElementById("prize-n-select");
+      if (prizeSelect) {
+        prizeSelect.addEventListener("change", function () {
+          prizeNState = parseInt(prizeSelect.value, 10);
+          render();
+        });
+      }
+
+      var peopleBulk = document.getElementById("people-bulk");
+      if (peopleBulk) {
+        peopleBulk.addEventListener("change", function () {
+          var n = parseInt(this.value, 10);
+          if (!(n >= 1 && n <= 10)) return;
+          sponsors.forEach(function (s) {
+            var max = peopleMaxFor(s.yen);
+            if (max) s.people = Math.min(n, max);
+          });
+          render();
+        });
+      }
+
+      var allocBody = document.getElementById("alloc-body");
+      if (allocBody) {
+        allocBody.addEventListener("change", function (e) {
+        var sel = e.target;
+        if (!sel.classList.contains("people-select")) return;
+        var i = parseInt(sel.getAttribute("data-i"), 10);
+        var n = parseInt(sel.value, 10);
+        if (sponsors[i] && n >= 1 && n <= peopleMaxFor(sponsors[i].yen)) {
+          sponsors[i].people = n;
+          render();
+        }
+        });
+      }
+
+      document.querySelectorAll(".js-prize-slider").forEach(function (el) {
+        el.addEventListener("input", function () {
+          prizeNState = parseInt(el.value, 10);
+          render();
+        });
+      });
+
+      var PATTERN_KEY = "bonenkai-2026-patterns";
+      var patterns = {
+        A: {
+          guests: 200,
+          prizeN: 100,
+          people: [10, 10, 10, 10, 10, 10, 10, 10, 5, 5, 5, 5, 10, 3, 1, 1, 1, 1]
+        },
+        B: null,
+        C: null
+      };
+      var activePattern = "A";
+
+      function snapshotPattern() {
+        return {
+          guests: guestNState,
+          prizeN: prizeNState,
+          people: sponsors.map(function (s) { return s.people; })
+        };
+      }
+      function applyPattern(p) {
+        if (!p) return false;
+        guestNState = p.guests;
+        prizeNState = p.prizeN;
+        if (prizeNState > guestNState) prizeNState = guestNState;
+        if (p.people) {
+          p.people.forEach(function (n, i) {
+            if (!sponsors[i] || !(n >= 1)) return;
+            var max = peopleMaxFor(sponsors[i].yen);
+            sponsors[i].people = max ? Math.min(n, max) : n;
+          });
+        }
+        return true;
+      }
+      function persistPatterns() {
+        try {
+          localStorage.setItem(PATTERN_KEY, JSON.stringify({
+            active: activePattern,
+            A: patterns.A,
+            B: patterns.B,
+            C: patterns.C
+          }));
+        } catch (err) {}
+      }
+      function loadPatterns() {
+        try {
+          var raw = localStorage.getItem(PATTERN_KEY);
+          if (!raw) return;
+          var saved = JSON.parse(raw);
+          ["A", "B", "C"].forEach(function (k) {
+            if (saved[k] && saved[k].people) patterns[k] = saved[k];
+          });
+          if (saved.active === "A" || saved.active === "B" || saved.active === "C") {
+            activePattern = saved.active;
+          }
+        } catch (err) {}
+      }
+      function updatePatternButtons() {
+        document.querySelectorAll(".pattern-btn").forEach(function (btn) {
+          var id = btn.getAttribute("data-pattern");
+          var has = !!patterns[id];
+          btn.classList.toggle("active", id === activePattern);
+          btn.classList.toggle("is-empty", !has);
+          btn.setAttribute("aria-pressed", id === activePattern ? "true" : "false");
+        });
+      }
+      function setPatternMsg(text) {
+        var el = document.getElementById("pattern-msg");
+        if (el) el.textContent = text || "";
+      }
+
+      loadPatterns();
+      try {
+        if (!localStorage.getItem("bonenkai-2026-prize-n-100")) {
+          if (patterns.A && patterns.A.prizeN === 25) patterns.A.prizeN = 100;
+          localStorage.setItem("bonenkai-2026-prize-n-100", "1");
+        }
+        if (!localStorage.getItem("bonenkai-2026-sponsor-yen-227")) {
+          ["A", "B", "C"].forEach(function (k) {
+            var p = patterns[k];
+            if (!p || !p.people || p.people.length !== 19) return;
+            var a = p.people;
+            if (a[13] === 2 && a[14] === 2) {
+              p.people = a.slice(0, 7)
+                .concat([a[8], a[7]])
+                .concat(a.slice(9, 13))
+                .concat([3, a[13]])
+                .concat(a.slice(15));
+            }
+          });
+          localStorage.setItem("bonenkai-2026-sponsor-yen-227", "1");
+        }
+        if (!localStorage.getItem("bonenkai-2026-people-tier")) {
+          ["A", "B", "C"].forEach(function (k) {
+            var p = patterns[k];
+            if (!p || !p.people) return;
+            p.people = sponsors.map(function (s) { return defaultPeopleFor(s.yen); });
+          });
+          localStorage.setItem("bonenkai-2026-people-tier", "1");
+        }
+        if (!localStorage.getItem("bonenkai-2026-reset-200-100")) {
+          ["A", "B", "C"].forEach(function (k) {
+            if (!patterns[k]) return;
+            patterns[k].guests = 200;
+            patterns[k].prizeN = 100;
+          });
+          localStorage.setItem("bonenkai-2026-reset-200-100", "1");
+          persistPatterns();
+        }
+        if (!localStorage.getItem("bonenkai-2026-hirano-20-10")) {
+          ["A", "B", "C"].forEach(function (k) {
+            var p = patterns[k];
+            if (!p || !p.people || p.people.length !== 19) return;
+            p.people[13] = 10;
+          });
+          localStorage.setItem("bonenkai-2026-hirano-20-10", "1");
+          persistPatterns();
+        }
+        if (!localStorage.getItem("bonenkai-2026-yuzawa-20-10")) {
+          ["A", "B", "C"].forEach(function (k) {
+            var p = patterns[k];
+            if (!p || !p.people || p.people.length !== 19) return;
+            p.people[8] = 10;
+          });
+          localStorage.setItem("bonenkai-2026-yuzawa-20-10", "1");
+          persistPatterns();
+        }
+        if (!localStorage.getItem("bonenkai-2026-drop-nishimura")) {
+          ["A", "B", "C"].forEach(function (k) {
+            var p = patterns[k];
+            if (!p || !p.people || p.people.length !== 19) return;
+            p.people = p.people.slice(0, 6).concat(p.people.slice(7));
+          });
+          localStorage.setItem("bonenkai-2026-drop-nishimura", "1");
+          persistPatterns();
+        }
+      } catch (err) {}
+      applyPattern(patterns[activePattern] || patterns.A);
+      guestNState = 240;
+      updatePatternButtons();
+
+      var patternTools = document.querySelector(".pattern-tools");
+      if (patternTools) {
+        patternTools.addEventListener("click", function (e) {
+          var btn = e.target.closest(".pattern-btn");
+          if (!btn || !patternTools.contains(btn)) return;
+          var id = btn.getAttribute("data-pattern");
+          activePattern = id;
+          if (patterns[id]) {
+            applyPattern(patterns[id]);
+            render();
+            setPatternMsg(id + "パターンを表示しています");
+          } else {
+            setPatternMsg(id + "パターンは未保存です。「この内容を保存」で保存できます");
+          }
+          updatePatternButtons();
+          persistPatterns();
+        });
+      }
+      var patternSave = document.getElementById("pattern-save");
+      if (patternSave) {
+        patternSave.addEventListener("click", function () {
+          patterns[activePattern] = snapshotPattern();
+          persistPatterns();
+          updatePatternButtons();
+          setPatternMsg(activePattern + "パターンに保存しました");
+        });
+      }
+
+      function syncHeadH() {
+        var head = document.querySelector(".app-head");
+        if (head) {
+          document.documentElement.style.setProperty("--head-h", head.offsetHeight + "px");
+        }
+      }
+      window.addEventListener("resize", syncHeadH);
+      syncHeadH();
+
+      render();
+    })();
+  </script>
+</body>
+</html>
