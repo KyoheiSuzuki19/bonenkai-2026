@@ -1257,7 +1257,7 @@
         <div class="summary">
           <div><span>協賛者</span><strong>18名</strong></div>
           <div><span>合計金額</span><strong>231万円</strong></div>
-          <div><span>受領</span><strong id="sponsor-paid-count">0名</strong></div>
+          <div><span>受領</span><strong id="sponsor-paid-count">1名　／　2万円</strong></div>
         </div>
       </header>
 
@@ -1298,7 +1298,7 @@
             <tr><td class="num">12</td><td>松野さん</td><td>ALTWELL</td><td class="yen"><span class="tag t10">10万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="松野さん" data-yen="100000" aria-label="松野さんの協賛金を受領"></td></tr>
             <tr><td class="num">13</td><td>平野さん</td><td>ミツケル</td><td class="yen"><span class="tag t20">20万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="平野さん" data-yen="200000" aria-label="平野さんの協賛金を受領"></td></tr>
             <tr><td class="num">14</td><td>渡邊先生</td><td>のがたクリニック</td><td class="yen"><span class="tag t3">3万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="渡邊先生" data-yen="30000" aria-label="渡邊先生の協賛金を受領"></td></tr>
-            <tr><td class="num">15</td><td>小澤一嘉さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="小澤一嘉さん" data-yen="20000" aria-label="小澤一嘉さんの協賛金を受領"></td></tr>
+            <tr class="paid-done"><td class="num">15</td><td>小澤一嘉さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="小澤一嘉さん" data-yen="20000" aria-label="小澤一嘉さんの協賛金を受領" checked></td></tr>
             <tr><td class="num">16</td><td>小澤幸治さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="小澤幸治さん" data-yen="20000" aria-label="小澤幸治さんの協賛金を受領"></td></tr>
             <tr><td class="num">17</td><td>髙瀬さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="髙瀬さん" data-yen="20000" aria-label="髙瀬さんの協賛金を受領"></td></tr>
             <tr><td class="num">18</td><td>岡田さん</td><td>ミツケル</td><td class="yen"><span class="tag t2">2万円</span></td><td class="paid-check"><input type="checkbox" data-sponsor="岡田さん" data-yen="20000" aria-label="岡田さんの協賛金を受領"></td></tr>
@@ -1308,11 +1308,11 @@
               <td></td>
               <td colspan="2">合計　18名</td>
               <td class="yen">231万円</td>
-              <td class="paid-check" id="sponsor-paid-foot">0名</td>
+              <td class="paid-check" id="sponsor-paid-foot">1名</td>
             </tr>
           </tfoot>
         </table>
-        <p class="note">金額の大きい順を基本に並べています。チェックは協賛金を受け取った印で、このブラウザに残ります。</p>
+        <p class="note">金額の大きい順を基本に並べています。いま入っている受領チェックは、共有した時点の状態です。その後に入れたチェックは、このブラウザに残ります。</p>
       </div>
 
       <div class="card">
@@ -2175,10 +2175,12 @@
       renderTasks();
 
       var SPONSOR_PAID_KEY = "bonenkai-2026-sponsor-paid";
+      var SHARED_SPONSOR_PAID = { "小澤一嘉さん": 1 };
       var sponsorPaid = {};
       try {
-        sponsorPaid = JSON.parse(localStorage.getItem(SPONSOR_PAID_KEY) || "{}") || {};
-      } catch (err) { sponsorPaid = {}; }
+        var rawPaid = localStorage.getItem(SPONSOR_PAID_KEY);
+        sponsorPaid = rawPaid ? (JSON.parse(rawPaid) || {}) : SHARED_SPONSOR_PAID;
+      } catch (err) { sponsorPaid = SHARED_SPONSOR_PAID; }
       function persistSponsorPaid() {
         try { localStorage.setItem(SPONSOR_PAID_KEY, JSON.stringify(sponsorPaid)); } catch (err) {}
       }
